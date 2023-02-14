@@ -10,8 +10,9 @@
 using namespace std;
 
 /***** Weitere Übersichten ******/
-#include "datentypen.h";
+#include "datentypen.h"
 #include "rechnungen.h"
+#include "ein_und_ausgabe.h"
 
 int main() {
 	// **********************************************  //
@@ -31,9 +32,11 @@ int main() {
 	// **********************************************  //
 	//datentypen();
 
-	allgemeine_rechnungen();
+	//allgemeine_rechnungen();
 
-	zufallszahlen();
+	//zufallszahlen();
+
+	ausgabe_und_formatierung();
 
 
 

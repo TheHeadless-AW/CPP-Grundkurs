@@ -39,8 +39,8 @@ void uebung_3_aufgabe_2() {
 	// Passt
 	int a, b;
 
-	//srand ist eine void Funktion und liefert keinen Wert zurück (vorher a = srand(12.5) )
-	//srand(12.5) in eigene Zeile verschoben, sodass rand() geseedet wird
+	// srand ist eine void Funktion und liefert keinen Wert zurück (vorher a = srand(12.5) )
+	// srand(12.5) in eigene Zeile verschoben, sodass rand() mittels 12.5 geseedet wird
 	srand(12.5);
 
 	// Anschließend a eine Zufallszahl zugewiesen

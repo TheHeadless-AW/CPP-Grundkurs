@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="arrays.h">
-      <Filter>Quelldateien</Filter>
-    </ClInclude>
     <ClInclude Include="structures.h">
-      <Filter>Quelldateien</Filter>
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="arrays.h">
+      <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="arrays_und_structures_main.cpp">
-      <Filter>Ressourcendateien</Filter>
-    </ClCompile>
     <ClCompile Include="arrays.cpp">
-      <Filter>Ressourcendateien</Filter>
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="arrays_und_structures_main.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="structures.cpp">
-      <Filter>Ressourcendateien</Filter>
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

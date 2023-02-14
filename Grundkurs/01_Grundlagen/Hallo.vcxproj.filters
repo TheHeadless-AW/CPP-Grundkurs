@@ -27,6 +27,9 @@
     <ClCompile Include="rechnungen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="ein_und_ausgabe.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funktionen.h">
@@ -36,6 +39,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="rechnungen.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ein_und_ausgabe.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
