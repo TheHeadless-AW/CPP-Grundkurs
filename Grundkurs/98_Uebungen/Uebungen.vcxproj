@@ -21,15 +21,18 @@
   <ItemGroup>
     <ClCompile Include="uebung1.cpp" />
     <ClCompile Include="uebung2.cpp" />
+    <ClCompile Include="uebung3.cpp" />
     <ClCompile Include="uebungen_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h" />
     <ClInclude Include="uebung2.h" />
+    <ClInclude Include="uebung3.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\adria\Downloads\uebung1.pdf" />
-    <None Include="C:\Users\adria\Downloads\uebung2.pdf" />
+    <None Include="Ressourcen\uebung1.pdf" />
+    <None Include="Ressourcen\uebung2.pdf" />
+    <None Include="Ressourcen\uebung3.pdf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
