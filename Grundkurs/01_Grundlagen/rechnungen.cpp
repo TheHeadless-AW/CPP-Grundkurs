@@ -2,7 +2,7 @@
 
 // Bibliothek für mathematische Funktionen
 #include <cmath>
-
+#include <time.h>
 #include <iostream>
 using namespace std;
 
