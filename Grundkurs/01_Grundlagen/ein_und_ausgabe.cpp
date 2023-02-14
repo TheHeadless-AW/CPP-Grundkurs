@@ -7,6 +7,8 @@ using namespace std;
 #include <iomanip> // Manipulatoren mit Wert
 
 void ausgabe_und_formatierung() {
+	// Praktische Quellen: https://faculty.cs.niu.edu/~hutchins/csci241/output.htm
+
 	cout.setf(ios::showpos);
 
 	// Zeigt das + Zeichen zusätzlich an, wenn es eine positive Zahl ist
