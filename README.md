@@ -10,12 +10,12 @@ Die Datei CPP-Grundkurs/Grundkurs/Grundkurs.sln einfach als Visual Studio Projek
 
 1. Auf Eigenschaften des jeweiligen Projektes (z.B. 01_Grundlagen)
 
-![alt text](https://github.com/adrianweidig/CPP-Grundkurs/blob/main/Bilder/Eigenschaften.PNG)
+![Eigenschaften](https://github.com/adrianweidig/CPP-Grundkurs/blob/master/Bilder/Eigenschaften.PNG?raw=true)
 
 2.1. Version der Zielplattform auf eine vorhandene ändern (Hier 8.1 bei VS 2015)
 2.2. Plattformtoolset auf ein vorhandenes ändern (Hier v140 bei VS 2015)
 
-![alt text](https://github.com/adrianweidig/CPP-Grundkurs/blob/main/Bilder/%C3%84nderungen.PNG)
+![Aenderungen](https://github.com/adrianweidig/CPP-Grundkurs/blob/master/Bilder/%C3%84nderungen.PNG?raw=true)
 
 3. Komplette Projektmappe bereinigen und neu erstellen
 
