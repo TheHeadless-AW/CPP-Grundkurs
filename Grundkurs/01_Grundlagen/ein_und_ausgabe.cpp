@@ -121,4 +121,14 @@ void eingabe() {
 	getline(cin, ganze_zeile_mit_leerzeichen);
 
 	cout << ganze_zeile_mit_leerzeichen << endl;
+
+	// Liest eine Zeile bis zum im 3. Parameter angegeben Zeichen ein
+	// bricht hier also bei * ab.
+	// Testeingabe: "Hallo * Welt!"
+	cin.sync();
+
+	cout << "Eingabe: ";
+	getline(cin, ganze_zeile_mit_leerzeichen, '*');
+
+	cout << ganze_zeile_mit_leerzeichen << endl;
 }
