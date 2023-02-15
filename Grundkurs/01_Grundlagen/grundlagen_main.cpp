@@ -36,7 +36,9 @@ int main() {
 
 	//zufallszahlen();
 
-	ausgabe_und_formatierung();
+	//ausgabe_und_formatierung();
+
+	eingabe();
 
 
 
@@ -46,6 +48,6 @@ int main() {
 
 
 	return 0;
-}
+ }
 
 

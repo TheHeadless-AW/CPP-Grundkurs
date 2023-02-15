@@ -24,8 +24,7 @@ void ausgabe_und_formatierung() {
 	cout << dec << 30 << endl;
 	cout << oct << 30 << endl;
 
-	// ACHTUNG: Es kann zwischen den Typen wechseln, jedoch muss auch hier anschließend
-	// immer nohex, nodec etc. angewandt werden um zur Standardausgabe zu gelangen
+	// ACHTUNG: Es kann zwischen den Typen gewechselt werden
 
 	// Setzt die Buchstaben von Zahlensystemen (z.B. Hexadezimal) auf Großbuchstaben
 	cout << uppercase << endl;
@@ -72,8 +71,54 @@ void ausgabe_und_formatierung() {
 	// " Text nach Zahl" wird setfill ausgelöst und auch beibehalten. 
 	// Dies ist mit setfill(' ') wieder zurücksetzbar, da wieder Whitespaces
 	// genutzt werden.
-	cout << right << setw(50) << 1234567890 << " Text nach Zahl"  << endl << setfill('.');
+	cout << right << setw(50) << 1234567890 << " Text nach Zahl" << endl << setfill('.');
 	cout << left << setw(50) << 1234567890 << " Text nach Zahl" << endl << setfill(' ');
 	cout << right << setw(50) << 1234567890 << " Text nach Zahl" << endl;
 
+}
+
+void eingabe() {
+	// Nimmt eine einfache Nutzereingabe entgegen.
+	// ACHTUNG: Sobald ein Whitespace / Leerzeichen
+	//			auftaucht wird abgebrochen.
+
+	string name;
+
+	// Nutzen sie als Beispieleingabe mit Anführungszeichen: "Hallo Welt!"
+
+	// Hier wird also der Userinput in die Variable Name
+	// umgeleitet
+	cout << "Eingabe: ";
+	getline(cin, name);
+
+	cout << name << endl;;
+
+	// ************************************ //
+	// ************* WICHTIG ************** //
+	// ************************************ //
+
+	// Verwirft den kompletten aktuell vorhandenen Inhalt
+	// dies ermöglicht die erneute Wiedergabe von cin.
+	// Vorstellung: cin >> name legt Flüssigkeit in ein Rohr.
+	//				Diese bleibt bei Nutzung von getline erhalten
+	//				und wird durch sync geleert. 
+	// Es bietet sich also an, dass wenn man etwas Neues einlesen
+	// möchte immer vorher sync auf dem Stream ausführt.
+	// Weitere Verwendung folgt in späteren Kapiteln.
+	cin.sync();
+
+	// Dies ist eine Möglichkeit eine komplette Zeile
+	// einlesen zu können.
+	string ganze_zeile_mit_leerzeichen;
+
+	// Nutzen sie als Beispieleingabe mit Anführungszeichen: "Hallo Welt!"
+
+	// Erwartet als Parameter an erster Stelle einen istream (z.B. cin)
+	// und als zweiten Parameter eine Variable in der der Input reinfließt
+	// getline gibt selbst auch einen istream zurück, welcher weiter verarbeitet
+	// werden kann.
+	cout << "Eingabe: ";
+	getline(cin, ganze_zeile_mit_leerzeichen);
+
+	cout << ganze_zeile_mit_leerzeichen << endl;
 }
