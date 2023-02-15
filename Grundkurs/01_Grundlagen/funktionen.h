@@ -5,7 +5,7 @@ using namespace std;
 //				ACHTUNG ACHTUNG ACHTUNG					 //
 //														 //
 //		<string> ist in <iostream> enthalten			 //
-//	deswegen sollte man grundsätzlich <string> mitnehmen //
+//	 dennoch sollte man grundsätzlich <string> mitnehmen //
 //				um mit Strings zu arbeiten				 //
 //														 //
 //				ACHTUNG ACHTUNG ACHTUNG					 //

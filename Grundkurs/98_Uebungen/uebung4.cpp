@@ -34,6 +34,7 @@ void uebung_4_aufgabe_2() {
 	cin >> stueckpreis;
 	cin.sync();
 
+	// Hier wurde bei \x81 nochmal getrennt, da \x81c ebenfalls existiert, jedoch zu Fehlern führt
 	cout << left << setw(10) << "Artikelnummer" << "\t" << "St\x81" << "ckzahl" << "\t" << right << "St\x81" << "ckpreis" << endl;
 	cout << left << setw(10) << artikelnummer << "\t" << stueckzahl << "\t\t" << right << stueckpreis << " EURO" << endl;
 
@@ -51,7 +52,7 @@ void uebung_4_aufgabe_3() {
 	cin.sync();
 
 	cout << "Zeichen\t" << "Zeichencode (dec)\t" << "Zeichencode (hex)\t" << "Zeichencode (oct)" << endl;
-	cout << (char)zeichencode << "\t" << dec << zeichencode << "\t\t\t" << hex << uppercase << zeichencode << "\t\t\t" << oct << zeichencode << endl;
+	cout << char(zeichencode) << "\t" << dec << zeichencode << "\t\t\t" << hex << uppercase << zeichencode << "\t\t\t" << oct << zeichencode << endl;
 
 	// ACHTUNG: Sobald man eine Zahl größer als 127 nimmt wird automatisch der Wertebereich auf unsigned
 	//			geändert, sodass man extended Ascii mit 0-255 nutzt. Bei Zahlen größer als 255 wird dann
