@@ -1,3 +1,5 @@
 #pragma once
 
-void beispiel_1_arrays();
+void grundlagen_arrays();
+
+void schleifen_arrays();

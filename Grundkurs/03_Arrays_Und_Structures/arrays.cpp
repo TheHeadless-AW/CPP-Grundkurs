@@ -4,7 +4,7 @@
 using namespace std;
 
 // Einfache Deklaration, Initialisierung und Zugriff auf ein Array
-void beispiel_1_arrays() {
+void grundlagen_arrays() {
 	// Arrays zählen immer ab 0 als erste Stelle
 	// Datentyp Bezeichner[Anzahl Elemente des Arrays]
 
@@ -48,5 +48,31 @@ void beispiel_1_arrays() {
 	// Zeigt die tatsächliche Größe / Länge des Arrays
 	// also die Anzahl an Elementen
 	cout << size(autos);
+}
 
+void schleifen_arrays() {
+	// Initialisieren eines Arrays mittels Schleife
+	int zahlen[10];
+
+	// Zählt von 0 bis 9 und fügt den selben Wert
+	// an die Stelle im Array ein
+	for (int i = 0; i < 10; i++) {
+		zahlen[i] = i;
+	}
+
+	// Ausgabe des Arrays 
+	cout << "Ausgabe mit Z\x84hlerschleife:" << endl;
+	for (int i = 0; i < 10; i++) {
+		cout << zahlen[i] << endl;
+	}
+
+	// Die For-Each Schleife weisst von Anfang bis Ende
+	// des angegebenen Containers (Hier ein Array) dem
+	// linken Parameter (int zahl) die Elemente des Arrays
+	// selbst zu, sodass diese direkt verarbeitet werden
+	// können. 
+	cout << "Ausgabe mit For-Each Schleife:" << endl;
+	for (int zahl : zahlen) {
+		cout << zahl << endl;
+	}
 }

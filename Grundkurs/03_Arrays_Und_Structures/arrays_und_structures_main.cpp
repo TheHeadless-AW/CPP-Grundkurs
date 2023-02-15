@@ -2,6 +2,8 @@
 #include "structures.h"
 
 int main() {
-	beispiel_1_arrays();
+	// grundlagen_arrays();
+
+	schleifen_arrays();
 
 }

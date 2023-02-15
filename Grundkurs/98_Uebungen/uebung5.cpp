@@ -67,6 +67,8 @@ void uebung_5_aufgabe_3() {
 }
 
 void uebung_5_aufgabe_4() {
+	// Ergänzung: || führt die rechte Seite nicht mehr aus, wenn links bereits true ist.
+
 	bool erg = false;
 	int y = 5;
 	int a, b, c;
@@ -86,10 +88,10 @@ void uebung_5_aufgabe_4() {
 
 	a = b = c = 0;
 	
-	// erg = 1 || 1 UND 1 somit True = 1
+	// erg = 1 || hier wird direkt abgebrochen da links True steht.
 	erg = ++a || ++b && ++c;
 
-	// Vermutung: 1 1 1 jedoch ist 1 0 0 da offenbar b und c nicht geändert werden
+	// 1, 1, 0, 0
 	cout << "\nerg = " << erg << ", a = " << a << ", b = " << b << ", c = " << c << endl;
 	
 	a = b = c = 0;
@@ -97,7 +99,7 @@ void uebung_5_aufgabe_4() {
 	// erg = 1 UND 1 ODER 1 somit True = 1
 	erg = ++a && ++b || ++c;
 
-	// Vermutung: 1 1 1 jedoch ist 1 1 0 somit wird wohl der Part links von || ausgeführt
+	// 1 , 1 , 1 , 0
 	cout << "\nerg = " << erg << ", a = " << a << ", b = " << b << ", c = " << c << endl;
 
 	//return 0;
