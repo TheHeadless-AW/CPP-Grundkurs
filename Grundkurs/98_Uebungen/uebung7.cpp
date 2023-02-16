@@ -61,7 +61,7 @@ void uebung_7_aufgabe_3() {
 
 	// 1. Zeile mit allen 12 Spalten
 	// 1. Spalte (2 Leerzeichen) und 2. Spalte (|)
-	cout << "    " << "|";
+	cout << setw(5) << right << "|";
 
 	// Anschließend soll für die nächsten 10 Spalten der
 	// 1. Zeile 1 bis 10 ausgegeben werden
@@ -78,7 +78,12 @@ void uebung_7_aufgabe_3() {
 	// Zeile 3 bis 12:
 	// Zeile 0 = die 1. Zeile von 1 * 1
 	for (int zeile = 1; zeile <= 10; zeile++) {
-		cout << setw(2) << right << zeile << "  |";
+		// Da Ausgangsform setw(5) ist ergibt sich aus dem 1. Zeichen (Zahl)
+		// in Verbindung mit dem anschließdenen Sonderzeichen setw(2) und setw(3)
+		// ob setw(2) und setw(3) oder andersrum spielt keine Rolle. Es geht
+		// lediglich darum ,dass zwischen der Zahl und | ein Abstand ist wodurch
+		// zwei getrennte setw() genutzt werden müssen.
+		cout << setw(3) << right << zeile << setw(2) << "|";
 
 		for (int spalte = 1; spalte <= 10; spalte++) {
 			cout << setw(5) << right << zeile * spalte;
