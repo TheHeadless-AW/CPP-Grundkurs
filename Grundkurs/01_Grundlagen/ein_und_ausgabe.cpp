@@ -75,6 +75,11 @@ void ausgabe_und_formatierung() {
 	cout << left << setw(50) << 1234567890 << " Text nach Zahl" << endl << setfill(' ');
 	cout << right << setw(50) << 1234567890 << " Text nach Zahl" << endl;
 
+	// Einfachste Möglichkeit ein Integer zu einem String zu machen hinsichtlich
+	// Strinkonkatenation. Ohne die Konvertierung wird schlichtweg nichts angezeigt.
+	int jahr = 2023;
+	cout << "Excuse me wir haben " + to_string(jahr) << endl;
+
 }
 
 void eingabe() {
