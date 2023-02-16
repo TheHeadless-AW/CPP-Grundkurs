@@ -48,8 +48,7 @@ void uebung_6_aufgabe_2() {
 
 void uebung_6_aufgabe_3() {
 	int tag, monat, jahr;
-	string str_monat;
-	string ausgabe;
+	string str_monat, ausgabe;
 
 	cout << "Tag: ";
 	cin >> tag;
