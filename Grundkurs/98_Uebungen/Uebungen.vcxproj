@@ -25,6 +25,7 @@
     <ClCompile Include="uebung4.cpp" />
     <ClCompile Include="uebung5.cpp" />
     <ClCompile Include="uebungen_main.cpp" />
+    <ClCompile Include="uebung_if.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h" />
@@ -32,6 +33,7 @@
     <ClInclude Include="uebung3.h" />
     <ClInclude Include="uebung4.h" />
     <ClInclude Include="uebung5.h" />
+    <ClInclude Include="uebung_if.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Ressourcen\uebung1.pdf" />
