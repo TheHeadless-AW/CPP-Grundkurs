@@ -47,7 +47,7 @@ void grundlagen_arrays() {
 
 	// Zeigt die tatsächliche Größe / Länge des Arrays
 	// also die Anzahl an Elementen
-	cout << size(autos);
+	cout << size(autos) << endl;
 }
 
 void schleifen_arrays() {
@@ -93,8 +93,18 @@ void mehrdimensionale_arrays() {
 	// bzw. typ bezeichner[1.Dimension][2.Dimension][X.Dimension]
 	string schachbrett[8][8];
 
+	// Mehrdimensionale Arrays sind also Arrays mit weiteren Arrays
+	// als Elemente, welche widerrum auch weitere Arrays enthalten
+	// können.
+
 	// Gibt 8 aus für die Anzahl der "Zeilen" des Arrays
-	cout << size(schachbrett) << endl;
+	cout << "Anzahl Zeilen: " << size(schachbrett) << endl;
+
+	// Gibt ebenfalls 8 jedoch für die Anzahl der Spalten des Arrays aus
+	// JA hier wird auf die Größe der 1. Zeile geschaut, jedoch ist die
+	// der anderen ebenfalls immer gleich groß somit muss einfach eine
+	// Zeile des Arrays ausgewählt werden.
+	cout << "Anzahl Spalten: " << size(schachbrett[0]) << endl;
 
 	// ForEach für mehrdimensionale Arrays ist in C++
 	// Aktuell nicht auf "einfache" Grundlagen-Art-Und-Weise
@@ -102,6 +112,16 @@ void mehrdimensionale_arrays() {
 
 	// Daher wird hier eine normale Zählerschleife genutzt
 	for (int zeile = 0; zeile < size(schachbrett); zeile++) {
+		for (int spalte = 0; spalte < size(schachbrett[0]); spalte++) {
+			// Wir wollen hier ja 1 bis 8 und nicht 0 bis 7 drinstehen haben daher +1
+			schachbrett[zeile][spalte] = "Zeile: " + to_string(zeile+1) + " - Spalte: " + to_string(spalte+1);
+		}
+	}
 
+	// Ausgabe wie oben gezeigt. Interessanter ist es im Debugger.
+	for (int zeile = 0; zeile < size(schachbrett); zeile++) {
+		for (int spalte = 0; spalte < size(schachbrett[0]); spalte++) {
+			cout << schachbrett[zeile][spalte] << endl;
+		}
 	}
 }
