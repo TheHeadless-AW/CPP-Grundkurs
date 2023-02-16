@@ -4,6 +4,8 @@
 int main() {
 	// grundlagen_arrays();
 
-	schleifen_arrays();
+	//schleifen_arrays();
+
+	mehrdimensionale_arrays();
 
 }

@@ -61,6 +61,7 @@ void schleifen_arrays() {
 	}
 
 	// Ausgabe des Arrays 
+	// Äquivalent zu Ausgabe mittels while und Zähler
 	cout << "Ausgabe mit Z\x84hlerschleife:" << endl;
 	for (int i = 0; i < 10; i++) {
 		cout << zahlen[i] << endl;
@@ -74,5 +75,33 @@ void schleifen_arrays() {
 	cout << "Ausgabe mit For-Each Schleife:" << endl;
 	for (int zahl : zahlen) {
 		cout << zahl << endl;
+	}
+}
+
+void mehrdimensionale_arrays() {
+	// Mehrdimensionale Arrays müssen von der Größe her
+	// festgelegt werden. Allgemein gilt, wenn derartige
+	// Strukturen limits haben, diese jedoch nicht vollständig
+	// bekannt sind auf sogenannte Container Klassen
+	// wie Listen, Vektoren etc. zurückzugreifen.
+
+	// Typ: string
+	// Bezeichner: schachbrett
+	// Anzahl Zeilen: 8
+	// Anzahl Spalten pro Zeile: 8
+	// typ bezeichner[zeilen][spalten]
+	// bzw. typ bezeichner[1.Dimension][2.Dimension][X.Dimension]
+	string schachbrett[8][8];
+
+	// Gibt 8 aus für die Anzahl der "Zeilen" des Arrays
+	cout << size(schachbrett) << endl;
+
+	// ForEach für mehrdimensionale Arrays ist in C++
+	// Aktuell nicht auf "einfache" Grundlagen-Art-Und-Weise
+	// möglich im Vergleich zu eindimensionalen Arrays
+
+	// Daher wird hier eine normale Zählerschleife genutzt
+	for (int zeile = 0; zeile < size(schachbrett); zeile++) {
+
 	}
 }

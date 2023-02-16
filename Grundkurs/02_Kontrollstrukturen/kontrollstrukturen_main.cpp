@@ -4,11 +4,11 @@ int main() {
 
 	// Nicht gewünschte Anzeigen auskommentieren
 
-	verzweigungen();
+	//verzweigungen();
 
 	schleifen();
 
-	switch_case();
+	//switch_case();
 
 	return 0;
 }

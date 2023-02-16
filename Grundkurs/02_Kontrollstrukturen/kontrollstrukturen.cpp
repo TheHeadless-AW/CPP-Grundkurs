@@ -42,9 +42,9 @@ void verzweigungen() {
 	}
 
 	// TERNÄRER OPERATOR
-	// Speichervariable   =    if(Bedingung)    ?     wenn WAHR, dann     : wenn FALSCH, dann   ? wenn zweite Bedingung WAHR, dann : wenn zweite Beindung auch FALSCH, dann
+	// Speichervariable   =    if(Bedingung)    ?     wenn WAHR, dann     : wenn FALSCH, dann   ? wenn zweite Bedingung WAHR, dann : wenn zweite Bedingung auch FALSCH, dann
 	//																		(Hier: else if())
-	string mann_oder_frau = (auswahl == "Mann") ? "Du bist also ein Mann" : (auswahl == "Frau") ? "Du bist also eine Frau"		   : "Du bist also weder Mann noch Frau";
+	string mann_oder_frau = (auswahl == "Mann") ? "Du bist also ein Mann" : (auswahl == "Frau") ? "Du bist also eine Frau" : "Du bist also weder Mann noch Frau";
 
 	cout << "Tern\x84rer Operator: " << mann_oder_frau << endl;
 
@@ -88,6 +88,28 @@ void schleifen() {
 	} while (zaehler < 5);
 
 	cout << endl;
+
+	// ****** Die schlechte Schleife ****** //
+	// Hier wird von goto Gebrauch gemacht, was man sich
+	// schlichtweg nicht angewöhnen sollte und aus der Zeit
+	// stammt in der sogenannte Code-Sprünge noch 
+	// gesellschaftlich anerkannt waren. Heutzutage
+	// rät man von so einem Konstrukt aufgrund der Lesbarkeit
+	// ganz stark ab.
+
+	// Nutzt die Bedingung und solange diese wahr ist wird diese
+	// auch durchgeführt. Bei goto springt es automatisch in die
+	// Zeile in der der entsprechende Bezeichner steht.
+	zaehler = 0;
+
+schleifen_anfang:
+	if (zaehler <= 10) {
+		cout << zaehler << endl;
+		zaehler++;
+		goto schleifen_anfang;
+	}
+
+
 }
 
 void switch_case() {
@@ -113,7 +135,7 @@ void switch_case() {
 	// weitergeprüft wird. Ansonsten treten die Folgefälle ebenfalls ein.
 	// Siehe case 0.
 	switch (tag) {
-	case 0: 
+	case 0:
 		cout << "Es ist nicht ";
 	case 1:
 		cout << "Montag" << endl;
