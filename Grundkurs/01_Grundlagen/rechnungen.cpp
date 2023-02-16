@@ -55,4 +55,10 @@ void zufallszahlen() {
 	cout << rand() << endl;
 	cout << rand() << endl;
 	cout << rand() << endl;
+
+	// Zahlen zwischen von und bis 
+	int von = 1;
+	int bis = 100;
+
+	cout << (rand() % bis + von) << endl;
 }
