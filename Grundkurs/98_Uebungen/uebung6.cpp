@@ -4,7 +4,7 @@
 using namespace std;
 
 // Man beachte, dass bis dato noch nicht das Erstellen
-// eigener Funktionen gelehrt wurde
+// eigener Funktionen effektiv gelehrt wurde
 
 
 void uebung_6_aufgabe_1() {
