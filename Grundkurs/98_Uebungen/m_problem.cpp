@@ -37,6 +37,7 @@ void m_problem() {
 	// wird gehandhabt als hätte man int a = 3534.0322 eingegeben
 	// also die Nachkommastellen werden abgeschnitten.
 	if (cin)
+		// vorher: if( e == char(e) )
 	{
 		seed = time(NULL);
 		srand(seed);
