@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="m_problem.cpp" />
     <ClCompile Include="uebung1.cpp" />
     <ClCompile Include="uebung2.cpp" />
     <ClCompile Include="uebung3.cpp" />
@@ -26,10 +27,12 @@
     <ClCompile Include="uebung5.cpp" />
     <ClCompile Include="uebung6.cpp" />
     <ClCompile Include="uebung7.cpp" />
+    <ClCompile Include="uebung8.cpp" />
     <ClCompile Include="uebungen_main.cpp" />
     <ClCompile Include="uebung_if.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="m_problem.h" />
     <ClInclude Include="uebung1.h" />
     <ClInclude Include="uebung2.h" />
     <ClInclude Include="uebung3.h" />
@@ -37,6 +40,7 @@
     <ClInclude Include="uebung5.h" />
     <ClInclude Include="uebung6.h" />
     <ClInclude Include="uebung7.h" />
+    <ClInclude Include="uebung8.h" />
     <ClInclude Include="uebung_if.h" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +51,7 @@
     <None Include="Ressourcen\uebung5.pdf" />
     <None Include="Ressourcen\uebung6.pdf" />
     <None Include="Ressourcen\uebung7.pdf" />
+    <None Include="Ressourcen\uebung8.pdf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

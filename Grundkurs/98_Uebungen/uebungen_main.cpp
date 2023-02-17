@@ -6,6 +6,8 @@
 #include "uebung_if.h"
 #include "uebung6.h"
 #include "uebung7.h"
+#include "m_problem.h"
+#include "uebung8.h"
 
 int main() {
 	// Nicht gewünschte Übungen auskommentieren
@@ -40,7 +42,11 @@ int main() {
 
 	//uebung_7_aufgabe_1();
 	//uebung_7_aufgabe_2();
-	uebung_7_aufgabe_3();
+	//uebung_7_aufgabe_3();
+
+	m_problem();
+
+	//uebung_8_aufgabe_1();
 
 
 	return 0;
