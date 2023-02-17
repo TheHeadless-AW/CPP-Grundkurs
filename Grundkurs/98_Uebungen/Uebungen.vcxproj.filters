@@ -88,5 +88,8 @@
     <None Include="Ressourcen\uebung6.pdf">
       <Filter>Ressourcendateien</Filter>
     </None>
+    <None Include="Ressourcen\uebung7.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
   </ItemGroup>
 </Project>

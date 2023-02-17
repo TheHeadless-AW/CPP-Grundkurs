@@ -46,6 +46,7 @@
     <None Include="Ressourcen\uebung4.pdf" />
     <None Include="Ressourcen\uebung5.pdf" />
     <None Include="Ressourcen\uebung6.pdf" />
+    <None Include="Ressourcen\uebung7.pdf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

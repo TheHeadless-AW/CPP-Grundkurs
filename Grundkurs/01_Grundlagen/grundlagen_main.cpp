@@ -13,6 +13,7 @@ using namespace std;
 #include "datentypen.h"
 #include "rechnungen.h"
 #include "ein_und_ausgabe.h"
+#include "konstanten_und_makros.h"
 
 int main() {
 	// **********************************************  //
@@ -30,22 +31,21 @@ int main() {
 	// **********************************************  //
 	// **********  Weitere Beispiele: ***************  //
 	// **********************************************  //
+	
+	// Alle Escape Sequenzen: https://en.cppreference.com/w/cpp/language/escape
+	
+	
 	//datentypen();
 
 	//allgemeine_rechnungen();
 
 	//zufallszahlen();
 
-	ausgabe_und_formatierung();
+	//ausgabe_und_formatierung();
 
 	//eingabe();
 
-
-
-	// Alle Escape Sequenzen: https://en.cppreference.com/w/cpp/language/escape
-
-
-
+	konstanten_beispiel1();
 
 	return 0;
  }

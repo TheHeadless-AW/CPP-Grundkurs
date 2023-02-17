@@ -124,4 +124,6 @@ void mehrdimensionale_arrays() {
 			cout << schachbrett[zeile][spalte] << endl;
 		}
 	}
+
+
 }

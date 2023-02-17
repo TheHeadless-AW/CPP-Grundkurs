@@ -23,12 +23,14 @@
     <ClCompile Include="ein_und_ausgabe.cpp" />
     <ClCompile Include="grundlagen_main.cpp" />
     <ClCompile Include="funktionen.cpp" />
+    <ClCompile Include="konstanten_und_makros.cpp" />
     <ClCompile Include="rechnungen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="datentypen.h" />
     <ClInclude Include="ein_und_ausgabe.h" />
     <ClInclude Include="funktionen.h" />
+    <ClInclude Include="konstanten_und_makros.h" />
     <ClInclude Include="rechnungen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

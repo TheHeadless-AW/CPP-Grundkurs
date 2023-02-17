@@ -30,6 +30,9 @@
     <ClCompile Include="ein_und_ausgabe.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="konstanten_und_makros.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="funktionen.h">
@@ -42,6 +45,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="ein_und_ausgabe.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="konstanten_und_makros.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

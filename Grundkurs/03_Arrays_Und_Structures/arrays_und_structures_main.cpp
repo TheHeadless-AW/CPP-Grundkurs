@@ -1,11 +1,16 @@
 #include "arrays.h"
 #include "structures.h"
+#include <iostream>
+using namespace std;
 
 int main() {
-	// grundlagen_arrays();
+	//grundlagen_arrays();
 
 	//schleifen_arrays();
 
-	mehrdimensionale_arrays();
+	//mehrdimensionale_arrays();
 
+	//unbenannte_structures();
+
+	benannte_structures();
 }

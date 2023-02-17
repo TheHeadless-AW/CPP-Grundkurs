@@ -1,4 +1,17 @@
+
+// Moderne Compiler sorgen mit #pragma once, dass diese
+// Datei nur ein einziges Mal eingebunden wird. Es ist
+// jedoch nicht garantiert. Somit bietet es sich an immer
+// Die Guards mit #ifdef etc. zu nutzen.
+// Siehe: konstanten_und_makros.h
 #pragma once
+
+//			           Konvention:						 //
+//														 //
+//		includes etc. sollten für gewöhnlich			 //
+//	 in den .cpp Dateien geschehen quasi für einen       //
+//				KLEINSTMÖGLICHEN Bereich  				 //
+
 #include <iostream>
 using namespace std;
 

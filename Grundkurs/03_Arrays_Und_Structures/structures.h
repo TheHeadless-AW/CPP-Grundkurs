@@ -1,3 +1,5 @@
 #pragma once
 
-void beispiel_1_structures();
+void unbenannte_structures();
+
+void benannte_structures();
