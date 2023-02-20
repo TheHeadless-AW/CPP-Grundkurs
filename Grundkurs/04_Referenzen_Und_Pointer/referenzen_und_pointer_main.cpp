@@ -2,13 +2,14 @@
 * @author Adrian Weidig
 * Contact: theheadless@gmx.net
 */
-#include <string>
-#include <iostream>
+
+#include "pointer.h"
 #include "referenzen.h"
-using namespace std;
 
 int main() {
-	referenzen_1();
+	//referenzen_1();
+
+	pointer_1();
 
 	return 0;
 }

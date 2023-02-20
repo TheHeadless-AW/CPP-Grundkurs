@@ -1,7 +1,14 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
+
 #include "referenzen.h"
 #include <iostream>
 #include <string>
 using namespace std;
+
+// Styleguide: https://google.github.io/styleguide/cppguide.html
 
 void referenzen_1() {
 	// Mit dem & Operator vor dem Bezeichner wird
@@ -43,5 +50,4 @@ void referenzen_1() {
 	// auf das andere "Objekt" hier unser String hugo. Ändern wir
 	// diesen wird also automatisch auch der Wert von wirklich_hugo
 	// gändert.
-
 }

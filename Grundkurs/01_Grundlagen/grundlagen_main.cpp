@@ -28,7 +28,7 @@ int main() {
 	// Hier wird ein String << int (Rückgabetyp von addieren() << endl (Zeichen) kombiniert.
 	// und anschließend in die Konsole umgeleitet.
 	
-	// cout << "Ergebnis: " << addieren() << endl;
+	 cout << "Ergebnis: " << addieren() << endl;
 
 	// textausgabe("Hallo Welt!");
 

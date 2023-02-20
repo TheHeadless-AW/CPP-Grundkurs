@@ -21,9 +21,15 @@
     <ClCompile Include="referenzen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="pointer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="referenzen.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="pointer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

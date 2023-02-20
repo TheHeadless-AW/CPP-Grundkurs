@@ -99,6 +99,7 @@ using namespace std;
 #endif // (5 > 3)
 
 
+
 void konstanten_beispiel1() {
 	// Alle oben genutzte Variablen wie text, zahl1
 	// zahl2 etc. sind dort lokal vorhanden und nicht 
