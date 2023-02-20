@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung1.h"
 #include <iostream>
 using namespace std;

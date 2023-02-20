@@ -1,5 +1,5 @@
 # CPP-Grundkurs
-## Genutzte Visual Studio Version: Microsoft Visual Studio Community 2022 (64-Bit) - Current Version 17.4.4 (Achtung meist sind VS Projekte nicht abwärtskompatibel)
+## Genutzte Visual Studio Version: Microsoft Visual Studio Community 2022 (64-Bit)  (Achtung meist sind VS Projekte nicht abwärtskompatibel)
 
 **Achtung:** Es wird ein nicht geschützter Branch genutzt. Es wird ebenfalls ausschließlich der master genutzt.
 

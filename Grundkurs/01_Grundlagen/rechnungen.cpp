@@ -1,3 +1,8 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
+
 #include "rechnungen.h"
 
 // Bibliothek für mathematische Funktionen
@@ -5,6 +10,9 @@
 #include <time.h>
 #include <iostream>
 using namespace std;
+
+// Gute Quelle:
+// https://www.w3schools.com/cpp/cpp_math.asp
 
 
 void allgemeine_rechnungen() {

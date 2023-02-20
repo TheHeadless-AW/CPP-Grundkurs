@@ -1,6 +1,11 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "arrays.h"
 #include <string>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Einfache Deklaration, Initialisierung und Zugriff auf ein Array
@@ -114,7 +119,7 @@ void mehrdimensionale_arrays() {
 	for (int zeile = 0; zeile < size(schachbrett); zeile++) {
 		for (int spalte = 0; spalte < size(schachbrett[0]); spalte++) {
 			// Wir wollen hier ja 1 bis 8 und nicht 0 bis 7 drinstehen haben daher +1
-			schachbrett[zeile][spalte] = "Zeile: " + to_string(zeile+1) + " - Spalte: " + to_string(spalte+1);
+			schachbrett[zeile][spalte] = "Zeile: " + to_string(zeile + 1) + " - Spalte: " + to_string(spalte + 1);
 		}
 	}
 
@@ -126,4 +131,25 @@ void mehrdimensionale_arrays() {
 	}
 
 
+}
+
+void strings() {
+	// Strings sind Arrays bestehend aus chars / Zeichen
+	// Somit kann auf diese zugegriffen werden, wie auf Arrays
+	string text = "Ich bin ein langer Text.";
+
+	cout << "L\x84nge des Strings: " << size(text) << endl;
+
+	// Die Klasse der Strings hat die .length() Funktion
+	// auf eigene Weise implementiert
+
+	cout << "L\x84nge des Strings: " << text.length() << endl;
+
+	// Ausgabe Zeichen für Zeichen
+	for (int i = 0; i < text.length(); i++) {
+		cout << setw(4) << right << i+1 << ". Zeichen: " << text[i] << endl;
+	}
+
+	// Ansonsten kann wie oben gezeigt auf einen String als Array zugegriffen
+	// werden.
 }

@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "arrays.h"
 #include "structures.h"
 #include <iostream>
@@ -12,5 +16,7 @@ int main() {
 
 	//unbenannte_structures();
 
-	benannte_structures();
+	//benannte_structures();
+
+	strings();
 }

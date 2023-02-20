@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "funktionen.h"
 
 int addieren() {

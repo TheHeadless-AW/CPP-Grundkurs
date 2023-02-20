@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung6.h"
 #include <iostream>
 #include <string>

@@ -1,7 +1,14 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung8.h"
 #include <cmath>
 #include <iostream>
 using namespace std;
+
+// Ternärer Operator gem. Aufgabe wurde aufgrund der
+// Sinnhaftigkeit nicht genutzt
 
 #define ABS(zahl) abs(zahl)
 #define MAX(zahl1, zahl2) std::max(zahl1, zahl2)

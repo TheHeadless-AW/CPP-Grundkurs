@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "ein_und_ausgabe.h"
 #include <iostream>
 #include <string>

@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung7.h"
 #include <cmath>
 #include <time.h>

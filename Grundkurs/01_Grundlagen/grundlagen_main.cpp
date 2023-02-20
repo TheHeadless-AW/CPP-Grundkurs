@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 // Fügt die .h Datei von Rechnung hinzu und macht somit
 // die dort enthaltenen Funktionen und Konstanten bekannt.
 // Die Datei als .h ist zwingend erforderlich. 

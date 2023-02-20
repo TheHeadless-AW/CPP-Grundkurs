@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "m_problem.h"
 
 #ifndef _IOSTREAM_

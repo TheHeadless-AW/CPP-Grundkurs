@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 
 // Moderne Compiler sorgen mit #pragma once, dass diese
 // Datei nur ein einziges Mal eingebunden wird. Es ist
