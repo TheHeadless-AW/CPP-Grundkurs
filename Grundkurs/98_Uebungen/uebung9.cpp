@@ -14,6 +14,10 @@ void uebung_9_aufgabe_1() {
 
 	cout << s1 << endl;
 
+	// if pos != npos wird nicht genutzt, da der String
+	// oben hardgecoded ist und kommt definitiv enthalten ist
+	// ebenso wie später Jahre
+
 	// b)
 	s1.insert(s1.find("kommt"), s2 + " ");
 	cout << s1 << endl;
