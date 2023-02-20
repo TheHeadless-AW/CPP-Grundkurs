@@ -119,11 +119,11 @@ long long fakultaet_rekursiv(long zahl) {
 	else {
 		// Kommt also erst sobald zahl > 1 
 		// und geht quasi rückwärts durch:
-		//      5 *  fakultaet_rekursiv (4) --> return 120
-		//      4 *  fakultaet_rekursiv (3) --> return 24
-		//      3 *  fakultaet_rekursiv (2) --> return 6
-		//      2 *  fakultaet_rekursiv (1) --> return 2
-		//		--> return 1
+		//      return 5 *  fakultaet_rekursiv (4) = 120
+		//      return 4 *  fakultaet_rekursiv (3) = 24
+		//      return 3 *  fakultaet_rekursiv (2) = 6
+		//      return 2 *  fakultaet_rekursiv (1) = 2
+		//		return 1
 
 		return zahl * fakultaet_rekursiv(zahl - 1);
 	}
