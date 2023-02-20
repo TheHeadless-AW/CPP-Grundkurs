@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="04_Referenzen_Und_Pointer.cpp" />
+    <ClCompile Include="referenzen.cpp" />
+    <ClCompile Include="referenzen_und_pointer_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="referenzen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
