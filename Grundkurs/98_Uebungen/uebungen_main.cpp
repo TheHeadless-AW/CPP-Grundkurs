@@ -12,6 +12,7 @@
 #include "uebung7.h"
 #include "m_problem.h"
 #include "uebung8.h"
+#include "uebung9.h"
 
 int main() {
 	// Nicht gewünschte Übungen auskommentieren
@@ -48,9 +49,13 @@ int main() {
 	//uebung_7_aufgabe_2();
 	//uebung_7_aufgabe_3();
 
-	m_problem();
+	//m_problem();
 
 	//uebung_8_aufgabe_1();
+
+	uebung_9_aufgabe_1();
+	uebung_9_aufgabe_2();
+	uebung_9_aufgabe_3();
 
 
 	return 0;

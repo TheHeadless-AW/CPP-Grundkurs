@@ -28,6 +28,7 @@
     <ClCompile Include="uebung6.cpp" />
     <ClCompile Include="uebung7.cpp" />
     <ClCompile Include="uebung8.cpp" />
+    <ClCompile Include="uebung9.cpp" />
     <ClCompile Include="uebungen_main.cpp" />
     <ClCompile Include="uebung_if.cpp" />
   </ItemGroup>
@@ -41,6 +42,7 @@
     <ClInclude Include="uebung6.h" />
     <ClInclude Include="uebung7.h" />
     <ClInclude Include="uebung8.h" />
+    <ClInclude Include="uebung9.h" />
     <ClInclude Include="uebung_if.h" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +54,7 @@
     <None Include="Ressourcen\uebung6.pdf" />
     <None Include="Ressourcen\uebung7.pdf" />
     <None Include="Ressourcen\uebung8.pdf" />
+    <None Include="Ressourcen\uebung9.pdf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

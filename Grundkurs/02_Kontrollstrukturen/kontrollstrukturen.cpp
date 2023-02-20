@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "kontrollstrukturen.h"
 #include <string>
 #include <iostream>

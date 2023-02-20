@@ -147,8 +147,38 @@ void strings() {
 
 	// Ausgabe Zeichen für Zeichen
 	for (int i = 0; i < text.length(); i++) {
-		cout << setw(4) << right << i+1 << ". Zeichen: " << text[i] << endl;
+		cout << setw(4) << right << i + 1 << ". Zeichen: " << text[i] << endl;
 	}
+
+	// Fügt an der entsprechenden Stelle den genannten String 
+	// mit ein. Überschreibt folgende Zeichen NICHT, sondern verschiebt
+	// diese weiter nach Rechts
+
+	// Quelle und Ergänzungen: https://cplusplus.com/reference/string/string/insert/
+	text.insert(11, " sehr");
+
+	// Neuer String: "Ich bin ein sehr langer Text."
+
+	cout << text << endl;
+
+	// Entfernt Zeichen ab der entsprechenden Stelle.
+	// Also ab Stelle 11 und von dieser aus gesehen 5 weitere Zeichen,
+	// welche entfernt werden.
+	text.erase(11, 5);
+
+	// .replace(ab, anzahl_zeichen, wodurch) ersetzt stattdessen an der
+	// entsprechenden Stelle die Zeichen und überschreibt die Zeichen
+	// rechts von "ab"
+
+	cout << text << endl;
+
+	// Entnehmen eines Teilstrings aus einem String
+	string mama_und_papa = "Mama und Papa";
+	string mama = mama_und_papa.substr(0, 4);
+	string papa = mama_und_papa.substr(9, 12);
+
+	cout << mama << endl;
+	cout << papa << endl;
 
 	// Ansonsten kann wie oben gezeigt auf einen String als Array zugegriffen
 	// werden.
