@@ -4,4 +4,6 @@
 */
 #pragma once
 
-void pointer_1();
+void pointer_grundlagen();
+
+void pointer_und_arrays();

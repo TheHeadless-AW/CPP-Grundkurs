@@ -9,7 +9,9 @@
 int main() {
 	//referenzen_1();
 
-	pointer_1();
+	//pointer_grundlagen();
+
+	pointer_und_arrays();
 
 	return 0;
 }
