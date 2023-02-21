@@ -5,3 +5,5 @@
 #pragma once
 
 void grundlagen_klassen();
+
+void konstruktoren_klassen();

@@ -8,9 +8,10 @@
 // inkludieren,
 #include "Mensch.h"
 #include <iostream>
+#include "Hund.h"
 using namespace std;
 
-void grundlagen_klassen(){
+void grundlagen_klassen() {
 	Mensch olaf;
 
 	// Man beachte, dass beide wieder die klasssichen Initialwerte
@@ -35,5 +36,31 @@ void grundlagen_klassen(){
 	bernd.name = "Bernd";
 
 	bernd.sprechen();
+
+}
+
+void konstruktoren_klassen() {
+	// Konstruktoren machen den Sinn hinter Objekten erst erkenntlich
+	Hund dackel("Dackel", 2);
+	cout << "Rasse: " << dackel.get_rasse() << " | Alter: " << dackel.get_alter() << endl;
+
+	// Rasse können wir nicht ändern, da es keine Möglichkeit gibt
+	// darauf zuzugreifen. Jedoch auf das Alter.
+	// Hier wird also das Alter auf das bereits vorhandene +1 geändert. 
+	dackel.set_alter(dackel.get_alter() + 1);
+
+	cout << "Rasse: " << dackel.get_rasse() << " | Alter: " << dackel.get_alter() << endl;
+
+	// Wird keine () angegeben, so wird schlichtweg der sogenannte default Konstruktor
+	// ausgeführt. Siehe Hund.h --> Aufruf von Hund() ohne Parametern in Klammern.
+	// ACHTUNG: Wird terrier() genutzt so geht C++ von einem Funktionsaufruf aus
+	Hund terrier;
 	
+	cout << "Rasse: " << terrier.get_rasse() << " | Alter: " << terrier.get_alter() << endl;
+
+	// Rasse kann nicht gesetzt werden
+	terrier.set_alter(1);
+
+	cout << "Rasse: " << terrier.get_rasse() << " | Alter: " << terrier.get_alter() << endl;
+
 }

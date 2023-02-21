@@ -9,7 +9,9 @@ using namespace std;
 
 int main() {
 
-	grundlagen_klassen();
+	//grundlagen_klassen();
+
+	konstruktoren_klassen();
 
 	return 0;
 }
