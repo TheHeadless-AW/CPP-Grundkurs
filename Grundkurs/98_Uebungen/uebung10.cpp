@@ -103,7 +103,9 @@ void uebung_10_aufgabe_2() {
 long long fakultaet_schleife(int zahl) {
 	long long ergebnis = 1;
 
-	for (int zaehler = 1; zaehler <= zahl; zaehler++) {
+	// Guter Einwand: Hier kann ab 2 angefangen werden zu zählen
+	//		  Vorher: int zaehler = 1
+	for (int zaehler = 2; zaehler <= zahl; zaehler++) {
 		cout << ergebnis;
 		ergebnis = ergebnis * zaehler;
 		cout << " * " << zaehler << " = " << ergebnis << endl;

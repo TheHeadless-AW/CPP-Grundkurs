@@ -49,7 +49,7 @@ int main() {
 
 	//eingabe();
 
-	konstanten_beispiel1();
+	//konstanten_beispiel1();
 
 	return 0;
  }
