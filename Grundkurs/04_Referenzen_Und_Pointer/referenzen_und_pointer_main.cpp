@@ -11,7 +11,9 @@ int main() {
 
 	//pointer_grundlagen();
 
-	pointer_und_arrays();
+	//pointer_und_arrays();
+
+	pointer_funktionen();
 
 	return 0;
 }

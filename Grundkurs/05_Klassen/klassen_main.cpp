@@ -4,12 +4,12 @@
 */
 #include <string>
 #include <iostream>
+#include "Klassen.h"
 using namespace std;
 
 int main() {
-	// ************************************ //
-	// ********** Überschrift ************* //
-	// ************************************ //
+
+	grundlagen_klassen();
 
 	return 0;
 }

@@ -27,7 +27,11 @@ void pointer_grundlagen() {
 
 	// Man beachte, dass der Datentyp des Pointers dem Datentyp der 
 	// Ursprungsvariable entsprechen sollte.
-	string* ptr_hugo = &hugo;
+
+	// SonarLint Empfehlung: Pointer sollten als Konstanten definiert werden,
+	//						 denn dieser wird nicht verändert, lediglich der
+	//						 Inhalt der dahinterliegenden "Variable"
+	string const* ptr_hugo = &hugo;
 
 	// Ausgabe des Strings
 	cout << hugo << endl;
@@ -49,7 +53,7 @@ void pointer_und_arrays() {
 
 	// Man beachte, dass im Vergleich zu normalen Pointern hier nicht
 	// &zahlen_array genutzt wird, sondern nur zahlen_array
-	int* ptr_zahlen_array = zahlen_array;
+	int const* ptr_zahlen_array = zahlen_array;
 
 	// Hier ist nun die echte Adresse, wie gewohnt gespeichert:
 	ptr_zahlen_array = zahlen_array;
@@ -89,5 +93,58 @@ void pointer_und_arrays() {
 
 		*ptr_zahlen_array--;
 	}
+}
 
+int addieren(int zahl1, int zahl2) {
+	return zahl1 + zahl2;
+}
+
+int subtrahieren(int zahl1, int zahl2) {
+	return zahl1 - zahl2;
+}
+
+void pointer_funktionen() {
+	// Dies speichert den Zeiger der Funktionen in einer Variable
+	int (*ptr_addieren_1) (int, int) = &addieren;
+
+	int (*ptr_subtrahieren_1) (int, int) = &subtrahieren;
+
+	cout << ptr_addieren_1(2, 2) << endl;
+	cout << ptr_subtrahieren_1(2, 2) << endl;
+	// Das praktische ist, dass diese nun gespeichert,
+	// übergeben etc. werden können wie Variablen
+
+	// Um dafür einen Typ dieser Pointer festzulegen
+	// bietet es sich an einen alias zu für einen Typen
+	// zu definieren
+
+	// "benutze" Bezeichner = Rückgabewert Bezeichner (Parameter1, Parameter2...)
+	//                                     * = Pointer
+	// Erst ab C++ 11 möglich vorher nur über typedef
+
+	// Wenn man genau hinschaut entspricht int (*)(int, int) der Signatur von 
+	// Zeile 108 mit z.B. int (*ptr_addieren)(int, int)
+	using Ptr_Rechnung = int (*)(int, int);
+
+	// Dadurch gibt es den Typen Ptr_Rechnung
+	Ptr_Rechnung ptr_addieren_2 = &addieren;
+
+	Ptr_Rechnung ptr_subtrahieren_2 = &subtrahieren;
+
+	// Diese sind alle nutzbar, wie die Funktion selbst
+	cout << ptr_addieren_2(2, 2) << endl;
+	cout << ptr_subtrahieren_2(2, 2) << endl;
+
+	Ptr_Rechnung ptr_arr_rechnungen[] = { &addieren, &subtrahieren };
+
+	cout << ptr_arr_rechnungen[0](4, 2) << endl; // addieren
+	cout << ptr_arr_rechnungen[1](4, 2) << endl; // subtrahieren
+
+	// Ja dies wäre auch wie gewohnt über eine Schleife nutzbar
+	// Beispiel anhand einer foreach Schleife:
+	for (Ptr_Rechnung ptr_rechnung : ptr_arr_rechnungen) {
+		// Durchläuft das Array von 0 zu 1 und führt die Rechnung
+		// mit den beiden Parametern 4 und 2 aus
+		cout << ptr_rechnung(4, 2) << endl;
+	}
 }
