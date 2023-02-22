@@ -65,6 +65,13 @@ public:
 	//	Hund::alter = alter;
 	//}
 
+	// 2. Möglichkeit exakt wie die darüber
+	//Hund(std::string const& rasse, int const& alter) {
+	//	this->rasse = rasse;
+	//	this->alter = alter;
+	//}
+	
+	
 	// 2. Möglichkeit: Macht das gleiche wie die 1. Möglichkeit 
 	Hund(std::string const& rasse, int const& alter)
 		: rasse(rasse),   // Beachte es startet mit : und wird mit , getrennt
@@ -72,8 +79,12 @@ public:
 						  // weitere Aufrufe unabhängig der Initialisierung stattfinden. 
 						  // Dies sollte jedoch in der .cpp Datei stattfinden.
 
-
-
+	// Der sogenante Dekonstruktor wird aufgerufen z.B. vor dem Beenden des Programmes, wenn
+	// die Objekte nicht mehr benötigt werden und deshalb aus dem Speicher dereferenziert und
+	// damit freigegeben werden.
+	~Hund() {
+		std::cout << "Ein Objekt Hund der Rasse " << Hund::rasse << " wurde zerst\x94rt." << std::endl;
+	}
 
 
 

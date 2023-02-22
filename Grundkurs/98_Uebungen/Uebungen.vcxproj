@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Konto.cpp" />
     <ClCompile Include="m_problem.cpp" />
     <ClCompile Include="uebung1.cpp" />
     <ClCompile Include="uebung10.cpp" />
@@ -33,9 +34,11 @@
     <ClCompile Include="uebung8.cpp" />
     <ClCompile Include="uebung9.cpp" />
     <ClCompile Include="uebungen_main.cpp" />
+    <ClCompile Include="uebung_bank.cpp" />
     <ClCompile Include="uebung_if.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Konto.h" />
     <ClInclude Include="m_problem.h" />
     <ClInclude Include="uebung1.h" />
     <ClInclude Include="uebung10.h" />
@@ -49,6 +52,7 @@
     <ClInclude Include="uebung7.h" />
     <ClInclude Include="uebung8.h" />
     <ClInclude Include="uebung9.h" />
+    <ClInclude Include="uebung_bank.h" />
     <ClInclude Include="uebung_if.h" />
   </ItemGroup>
   <ItemGroup>

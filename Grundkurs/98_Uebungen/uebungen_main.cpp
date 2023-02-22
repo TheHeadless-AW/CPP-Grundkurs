@@ -16,6 +16,7 @@
 #include "uebung10.h"
 #include "uebung11.h"
 #include "uebung12.h"
+#include "uebung_bank.h"
 
 int main() {
 	// Nicht gewünschte Übungen auskommentieren
@@ -68,7 +69,9 @@ int main() {
 
 	//uebung_12_aufgabe_1();
 	//uebung_12_aufgabe_2();
-	uebung_12_aufgabe_3();
+	//uebung_12_aufgabe_3();
+
+	uebung_bank();
 
 
 	return 0;

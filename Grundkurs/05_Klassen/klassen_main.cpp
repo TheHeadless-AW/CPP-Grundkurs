@@ -13,6 +13,8 @@ int main() {
 
 	konstruktoren_klassen();
 
+
+	cout << "Programm beendet." << endl;
 	return 0;
 }
 
