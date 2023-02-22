@@ -19,6 +19,8 @@ public:
 
 	void geld_auszahlen(int menge);
 
+	void ueberweisung(Konto empfaengerkonto, int betrag);
+
 	void anzeigen();
 
 };

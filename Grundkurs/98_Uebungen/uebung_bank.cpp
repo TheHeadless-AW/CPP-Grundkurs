@@ -39,4 +39,10 @@ void uebung_bank(){
 
 	hildegards_konto.geld_einzahlen(800);
 	hildegards_konto.anzeigen();
+
+	///
+
+	hildegards_konto.ueberweisung(olafs_konto, 500);
+	hildegards_konto.anzeigen();
+	olafs_konto.anzeigen();
 }

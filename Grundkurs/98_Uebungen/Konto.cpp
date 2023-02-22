@@ -31,7 +31,19 @@ void Konto::geld_auszahlen(int menge) {
 		cout << menge << " Euro vom Konto von " << this->kontoinhaber << " (Konto Nr.: " << this->kontonummer << ") abgehoben." << endl;
 	}
 	else {
-		cout << "Die gew\x81nschte Abbuchung in H\x94he von " << menge << " Euro \x81" << "bersteigt ihre Dispo Grenze (" << this->dispo_grenze << " Euro) um " << menge-(this->kontostand + (this->dispo_grenze * (-1))) << " Euro." << endl;
+		cout << "Die gew\x81nschte Abbuchung in H\x94he von " << menge << " Euro \x81" << "bersteigt ihre Dispo Grenze (" << this->dispo_grenze << " Euro) um " << menge - (this->kontostand + (this->dispo_grenze * (-1))) << " Euro." << endl;
+	}
+}
+
+void Konto::ueberweisung(Konto empfaengerkonto, int menge) {
+	if (this->kontostand - menge > this->dispo_grenze) {
+		this->kontostand -= menge;
+		cout << "Konto: " << empfaengerkonto.kontostand;
+		empfaengerkonto.kontostand += menge;
+		cout << menge << " Euro vom Konto von " << this->kontoinhaber << " (Konto Nr.: " << this->kontonummer << ") auf das Konto von " << empfaengerkonto.kontoinhaber << " (Konto Nr.: " << empfaengerkonto.kontonummer << ") \x81" << "berwiesen." << endl;
+	}
+	else {
+		cout << "Die gew\x81nschte \x9A" << "berweisung in H\x94he von " << menge << " Euro \x81" << "bersteigt ihre Dispo Grenze(" << this->dispo_grenze << " Euro) um " << menge - (this->kontostand + (this->dispo_grenze * (-1))) << " Euro." << endl;
 	}
 }
 

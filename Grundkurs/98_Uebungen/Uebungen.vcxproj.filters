@@ -66,6 +66,12 @@
     <ClCompile Include="Konto.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung13.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Datum.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h">
@@ -116,6 +122,12 @@
     <ClInclude Include="Konto.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="uebung13.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Datum.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Ressourcen\uebung1.pdf">
@@ -152,6 +164,9 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="Ressourcen\uebung12.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Ressourcen\uebung13.pdf">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>
