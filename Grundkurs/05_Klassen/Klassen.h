@@ -7,3 +7,5 @@
 void grundlagen_klassen();
 
 void konstruktoren_klassen();
+
+void operatoren_ueberladung();

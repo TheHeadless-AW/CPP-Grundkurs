@@ -64,3 +64,15 @@ void konstruktoren_klassen() {
 	cout << "Rasse: " << terrier.get_rasse() << " | Alter: " << terrier.get_alter() << endl;
 
 }
+
+void operatoren_ueberladung(){
+	Hund cookie("Terrier", 2);
+	Hund hugo("Dackel", 3);
+	Hund ella("Terrier", 4);
+
+	// Wir haben == überladen, sodass true zurückgeliefert
+	// wird, wenn die Rasse gleich ist
+
+	cout << "cookie hat die gleiche Rasse wie ella? " << boolalpha << (cookie == ella) << endl;
+	cout << "cookie hat die gleiche Rasse wie hugo? " << boolalpha << (cookie == hugo) << endl;
+}

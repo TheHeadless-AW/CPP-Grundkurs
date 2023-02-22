@@ -17,3 +17,7 @@ int Hund::get_alter() {
 void Hund::set_alter(int alter) {
 	Hund::alter = alter;
 }
+
+bool Hund::operator==(Hund vergleichshund){
+	return this->rasse==vergleichshund.rasse;
+}

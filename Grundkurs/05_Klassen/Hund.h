@@ -102,6 +102,11 @@ public:
 	// Setter verändern Attribute innerhalb der Klasse
 	void set_alter(int alter);
 
+	// Operatoren-Überladung:
+	// Überlädt den vorhandenen Operator (==), sodass
+	// dieser mit dem nun vorhandenen Datentyp nutzbar ist.
+	bool operator== (Hund vergleichshund);
+
 private:
 	std::string rasse;
 

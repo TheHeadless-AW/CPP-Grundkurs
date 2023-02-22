@@ -11,7 +11,9 @@ int main() {
 
 	//grundlagen_klassen();
 
-	konstruktoren_klassen();
+	//konstruktoren_klassen();
+
+	operatoren_ueberladung();
 
 
 	cout << "Programm beendet." << endl;
