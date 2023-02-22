@@ -31,7 +31,7 @@ void uebung_bank(){
 	///
 
 	Konto hildegards_konto;
-	hildegards_konto.init(200, "Hildegard", -100);
+	hildegards_konto.init(200, "Hildegard", 0);
 	hildegards_konto.anzeigen();
 
 	hildegards_konto.geld_auszahlen(500);
