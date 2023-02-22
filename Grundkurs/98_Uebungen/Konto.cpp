@@ -37,8 +37,8 @@ void Konto::geld_auszahlen(int menge) {
 
 void Konto::anzeigen() {
 	cout << "----------------------------------------" << endl;
-	cout << "Kontoinhaber: " << this->kontoinhaber << endl;
-	cout << "Kontonummer: " << this->kontonummer << endl;
-	cout << "Kontostand: " << this->kontostand << endl;
+	cout << "Kontoinhaber\t: " << this->kontoinhaber << endl;
+	cout << "Kontonummer\t: " << this->kontonummer << endl;
+	cout << "Kontostand\t: " << this->kontostand << endl;
 	cout << "----------------------------------------" << endl;
 }
