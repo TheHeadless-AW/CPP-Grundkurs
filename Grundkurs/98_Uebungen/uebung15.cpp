@@ -9,7 +9,7 @@ Artikel globaler_artikel(2,"Globaler Artikel",5.0);
 
 // Gem. Aufgabe
 void test() {
-	Artikel test_artikel_1(3, "Test Artikel 1");
+	Artikel test_artikel_1(3, "Test Artikel 1",10);
 	static Artikel test_artikel_2(4, "Test Artikel 2", -400);
 
 	test_artikel_1.print();
@@ -17,7 +17,7 @@ void test() {
 }
 
 void uebung_15_aufgabe_1(){
-	Artikel lokaler_artikel(1,"Lokaler Artikel");
+	Artikel lokaler_artikel(1,"Lokaler Artikel",4);
 	lokaler_artikel.print();
 	globaler_artikel.print();
 
