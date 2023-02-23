@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-static int anzahl_artikel = 0;
+int anzahl_artikel = 0;
 
 Artikel::Artikel(long artikelnummer, const std::string& artikelbezeichnung, double verkaufspreis) {
 	this->artikelnummer = artikelnummer;
