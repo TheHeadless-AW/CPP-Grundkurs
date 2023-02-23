@@ -4,4 +4,4 @@
 */
 #pragma once
 
-void uebung_13_aufgabe_1();
+void uebung_15_aufgabe_1();

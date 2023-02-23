@@ -37,6 +37,11 @@ void grundlagen_klassen() {
 
 	bernd.sprechen();
 
+	// Zugriff auf zugehörige Pointer:
+	Mensch* ptr_bernd = &bernd;
+	cout << "Alter: " << ptr_bernd->alter << endl;
+	ptr_bernd->sprechen();
+
 }
 
 void konstruktoren_klassen() {

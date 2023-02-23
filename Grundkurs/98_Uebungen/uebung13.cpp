@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung13.h"
 #include <string>
 #include <iostream>
@@ -13,4 +17,7 @@ void uebung_13_aufgabe_1(){
 	Datum heute;
 	heute.init();
 	heute.print();
+
+	Datum* ptr_heute = &heute;
+	ptr_heute->print();
 }

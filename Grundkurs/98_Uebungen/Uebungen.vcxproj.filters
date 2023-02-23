@@ -72,6 +72,15 @@
     <ClCompile Include="Datum.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung14.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung15.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Artikel.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h">
@@ -128,6 +137,15 @@
     <ClInclude Include="Datum.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="uebung14.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung15.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Artikel.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Ressourcen\uebung1.pdf">
@@ -167,6 +185,12 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="Ressourcen\uebung13.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Ressourcen\uebung14.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Ressourcen\uebung15.pdf">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Artikel.cpp" />
     <ClCompile Include="Datum.cpp" />
     <ClCompile Include="Konto.cpp" />
     <ClCompile Include="m_problem.cpp" />
@@ -27,6 +28,8 @@
     <ClCompile Include="uebung11.cpp" />
     <ClCompile Include="uebung12.cpp" />
     <ClCompile Include="uebung13.cpp" />
+    <ClCompile Include="uebung14.cpp" />
+    <ClCompile Include="uebung15.cpp" />
     <ClCompile Include="uebung2.cpp" />
     <ClCompile Include="uebung3.cpp" />
     <ClCompile Include="uebung4.cpp" />
@@ -40,6 +43,7 @@
     <ClCompile Include="uebung_if.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Artikel.h" />
     <ClInclude Include="Datum.h" />
     <ClInclude Include="Konto.h" />
     <ClInclude Include="m_problem.h" />
@@ -48,6 +52,8 @@
     <ClInclude Include="uebung11.h" />
     <ClInclude Include="uebung12.h" />
     <ClInclude Include="uebung13.h" />
+    <ClInclude Include="uebung14.h" />
+    <ClInclude Include="uebung15.h" />
     <ClInclude Include="uebung2.h" />
     <ClInclude Include="uebung3.h" />
     <ClInclude Include="uebung4.h" />
@@ -65,6 +71,8 @@
     <None Include="Ressourcen\uebung11.pdf" />
     <None Include="Ressourcen\uebung12.pdf" />
     <None Include="Ressourcen\uebung13.pdf" />
+    <None Include="Ressourcen\uebung14.pdf" />
+    <None Include="Ressourcen\uebung15.pdf" />
     <None Include="Ressourcen\uebung2.pdf" />
     <None Include="Ressourcen\uebung3.pdf" />
     <None Include="Ressourcen\uebung4.pdf" />
