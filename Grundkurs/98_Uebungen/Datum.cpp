@@ -72,7 +72,7 @@ bool Datum::isEqual(Datum& dat) {
 	return this->tag == dat.tag && this->monat == dat.monat && this->jahr == dat.jahr;
 }
 
-const string& Datum::asString() {
+const string& Datum::asString() const {
 	stringstream out;
 	// Ist dieser nicht static wird bei der Rueckgabe nur "" 
 	// zurueckgegeben, da der lokale Wert beim Verlassen der

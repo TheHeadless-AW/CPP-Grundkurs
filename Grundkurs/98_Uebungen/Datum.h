@@ -29,7 +29,7 @@ public:
 
 	bool isEqual(Datum&);
 
-	const std::string& asString();
+	const std::string& asString() const;
 
 	// Getter und Setter
 
