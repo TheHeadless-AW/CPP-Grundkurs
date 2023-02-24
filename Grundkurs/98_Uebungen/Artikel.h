@@ -14,6 +14,7 @@ public:
 
 	Artikel(long artikelnummer = 0, const std::string& artikelbezeichnung = "", double verkaufspreis = 0.0);
 	~Artikel();
+	Artikel(const Artikel& artikelobjekt);
 	void print();
 
 	/// Getter

@@ -9,6 +9,8 @@
 #include "Mensch.h"
 #include <iostream>
 #include "Hund.h"
+#include "Fahrrad.h"
+#include "Mercedes.h"
 using namespace std;
 
 void grundlagen_klassen() {
@@ -80,4 +82,26 @@ void operatoren_ueberladung(){
 
 	cout << "cookie hat die gleiche Rasse wie ella? " << boolalpha << (cookie == ella) << endl;
 	cout << "cookie hat die gleiche Rasse wie hugo? " << boolalpha << (cookie == hugo) << endl;
+}
+
+// Bei Vererbung via strg+linksklick durch die Klassen und Methoden navigieren
+// um wirklich alles nachvollziehen zu können.
+void vererbung_klassen(){
+	// Man beachte, dass man Fahrzeug nicht via
+	// include einbinden muss.
+	Fahrrad ein_fahrrad;
+	
+	ein_fahrrad.geraeusch_machen();
+	ein_fahrrad.fahren();
+	cout << "Anzahl Fahrzeuge: " << ein_fahrrad.get_anzahl_fahrzeuge() << endl;
+	cout << "Anzahl Reifen: " << ein_fahrrad.get_anzahl_reifen() << endl;
+	cout << "------------------------------------------------" << endl;
+
+	Mercedes ein_mercedes;
+
+	ein_mercedes.geraeusch_machen();
+	ein_mercedes.fahren();
+	cout << "Anzahl Fahrzeuge: " << ein_mercedes.get_anzahl_fahrzeuge() << endl;
+	cout << "Anzahl Reifen: " << ein_mercedes.get_anzahl_reifen() << endl;
+	cout << "------------------------------------------------" << endl;
 }

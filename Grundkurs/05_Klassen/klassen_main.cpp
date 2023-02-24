@@ -13,7 +13,9 @@ int main() {
 
 	//konstruktoren_klassen();
 
-	operatoren_ueberladung();
+	//operatoren_ueberladung();
+
+	vererbung_klassen();
 
 
 	cout << "Programm beendet." << endl;

@@ -86,6 +86,10 @@ public:
 		std::cout << "Ein Objekt Hund der Rasse " << Hund::rasse << " wurde zerst\x94rt." << std::endl;
 	}
 
+	// Copy Konstruktor zur Nutzung von "Kopien" des Objektes
+	// Wichtige Quelle: https://stackoverflow.com/questions/3278625/when-do-we-have-to-use-copy-constructors
+	Hund(const Hund& hundobjekt);
+
 
 
 	// Sogenannte Getter und Setter sind dafür zuständig

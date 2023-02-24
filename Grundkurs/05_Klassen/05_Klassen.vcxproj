@@ -19,15 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Fahrrad.cpp" />
+    <ClCompile Include="Fahrzeug.cpp" />
     <ClCompile Include="Hund.cpp" />
     <ClCompile Include="Klassen.cpp" />
     <ClCompile Include="klassen_main.cpp" />
     <ClCompile Include="Mensch.cpp" />
+    <ClCompile Include="Mercedes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Fahrrad.h" />
+    <ClInclude Include="Fahrzeug.h" />
     <ClInclude Include="Hund.h" />
     <ClInclude Include="Klassen.h" />
     <ClInclude Include="Mensch.h" />
+    <ClInclude Include="Mercedes.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
