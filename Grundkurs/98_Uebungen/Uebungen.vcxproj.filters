@@ -81,6 +81,15 @@
     <ClCompile Include="Artikel.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung17.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Mitglied.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h">
@@ -146,6 +155,18 @@
     <ClInclude Include="Artikel.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="uebung16.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung17.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Mitglied.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="tools.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Ressourcen\uebung1.pdf">
@@ -191,6 +212,12 @@
       <Filter>Ressourcendateien</Filter>
     </None>
     <None Include="Ressourcen\uebung15.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Ressourcen\uebung16.pdf">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Ressourcen\uebung17.pdf">
       <Filter>Ressourcendateien</Filter>
     </None>
   </ItemGroup>
