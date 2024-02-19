@@ -18,11 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6739199b-81bc-4f11-8efe-380d6ffbe2e1}</ProjectGuid>
-    <RootNamespace>My01ErweiterteGrundlagen</RootNamespace>
+    <ProjectGuid>{a22be9d4-a552-4813-8e91-f672e2c161c7}</ProjectGuid>
+    <RootNamespace>My02DynamischeDatenstrukturen</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,15 +129,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="01_CLIUnterbrechung.cpp" />
-    <ClCompile Include="02_EigeneTypen.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="01_CLIUnterbrechung.h" />
-    <ClInclude Include="02_EigeneTypen.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
