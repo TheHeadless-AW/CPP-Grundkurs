@@ -6,7 +6,7 @@
 
 
 // Eine inline Funktion funktioniert wie ein Makro, lediglich
-// nicht im Präprozessor, sondern während der Compielzeit und
+// nicht im Präprozessor, sondern während der Compilezeit und
 // ist ebenfalls nur ein Vorschlag für den Compiler. Stellt
 // der Compiler fest, dass es sich Performancemäßig nicht lohnt
 // wird inline ignoriert.

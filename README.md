@@ -5,6 +5,7 @@
 
 Die Datei CPP-Grundkurs/Grundkurs/Grundkurs.sln einfach als Visual Studio Projektmappe öffnen, sodass es in übersichtlicher Weise genutzt werden kann.
 
+Entsprechend der Projektmappe das einzelne Projekt via "Rechtsklick + Als Startprojekt festlegen" als solches festlegen um dieses zu debuggen.
 
 ## Inkompatibilität mit aktueller Visual Studio Version?
 **-> Dies ist für jedes Projekt in der Projektmappe einzeln durchzuführen und jedes Mal wenn man dieses Repo neu runterlädt und die Version Probleme bereitet**
