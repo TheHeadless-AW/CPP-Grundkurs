@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include <iostream>
 #include <cstdarg>
 #include "uebung8.h"

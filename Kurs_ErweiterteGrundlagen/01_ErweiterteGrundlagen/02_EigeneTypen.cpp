@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include <iostream>
 #include "02_EigeneTypen.h"
 
