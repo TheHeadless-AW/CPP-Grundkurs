@@ -11,6 +11,9 @@
 #include "uebung6.h"
 #include "uebung7.h"
 #include "uebung8.h"
+#include "uebung9.h"
+#include "main.h"
+#include "uebung10.h"
 using namespace std;
 
 void uebung5() {
@@ -49,10 +52,14 @@ void uebung6() {
 	//kategorisiereDreieck(false, false, true, false, false);
 }
 
-void uebung8() {;
+void uebung8() {
 	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 5, 3, 3, 4, 12, 5, 2, 0) << endl;
 	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 5, 0) << endl;
 	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 1, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 0) << endl;
+}
+
+void uebung10() {
+	aufgabe10();
 }
 
 int main()
@@ -81,7 +88,13 @@ int main()
 	// ausgabeText();
 
 	// Uebung 8
-	uebung8();
+	// uebung8();
+
+	// Uebung 9 (Seltsame Aufgabenstellung)
+	// ausgabeLandUndHauptstadt();
+
+	// Uebung 10
+	// uebung10();
 
 }
 

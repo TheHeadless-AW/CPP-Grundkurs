@@ -18,11 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="00_BeispielCKFZ.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="00_BeispielCKFZ.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3622a6ee-4e72-4843-b4b9-b487a6a1f70f}</ProjectGuid>
-    <RootNamespace>My90CLIUebungen</RootNamespace>
+    <ProjectGuid>{f58d2955-faf5-41fa-8258-2194e3ade274}</ProjectGuid>
+    <RootNamespace>My03Klassen</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,32 +133,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="uebung1.cpp" />
-    <ClCompile Include="uebung10.cpp" />
-    <ClCompile Include="uebung2.cpp" />
-    <ClCompile Include="uebung3.cpp" />
-    <ClCompile Include="uebung4.cpp" />
-    <ClCompile Include="uebung5.cpp" />
-    <ClCompile Include="uebung6.cpp" />
-    <ClCompile Include="uebung7.cpp" />
-    <ClCompile Include="uebung8.cpp" />
-    <ClCompile Include="uebung9.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="main.h" />
-    <ClInclude Include="uebung1.h" />
-    <ClInclude Include="uebung10.h" />
-    <ClInclude Include="uebung2.h" />
-    <ClInclude Include="uebung3.h" />
-    <ClInclude Include="uebung4.h" />
-    <ClInclude Include="uebung5.h" />
-    <ClInclude Include="uebung6.h" />
-    <ClInclude Include="uebung7.h" />
-    <ClInclude Include="uebung8.h" />
-    <ClInclude Include="uebung9.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
