@@ -9,6 +9,8 @@
 #include "uebung4.h"
 #include "uebung5.h"
 #include "uebung6.h"
+#include "uebung7.h"
+#include "uebung8.h"
 using namespace std;
 
 void uebung5() {
@@ -47,13 +49,19 @@ void uebung6() {
 	//kategorisiereDreieck(false, false, true, false, false);
 }
 
+void uebung8() {;
+	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 5, 3, 3, 4, 12, 5, 2, 0) << endl;
+	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 5, 0) << endl;
+	cout << "Der Notendurchschnitt ist: " << durchschnitt(1, 1, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 0) << endl;
+}
+
 int main()
 {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewünschte Funktion ausklammern.
 
 	// Uebung 1
 	// namensausgabe();
-	
+
 	// Uebung 2
 	// entertoexit();
 
@@ -67,7 +75,13 @@ int main()
 	// uebung5();
 
 	// Uebung 6
-	uebung6();
+	// uebung6();
 
- }
+	// Uebung 7
+	// ausgabeText();
+
+	// Uebung 8
+	uebung8();
+
+}
 

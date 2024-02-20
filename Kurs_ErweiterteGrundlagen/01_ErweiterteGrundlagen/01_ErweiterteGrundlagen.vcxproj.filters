@@ -24,12 +24,18 @@
     <ClCompile Include="02_EigeneTypen.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="03_VariableParameterlisten.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01_CLIUnterbrechung.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="02_EigeneTypen.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="03_VariableParameterlisten.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

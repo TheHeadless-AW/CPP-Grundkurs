@@ -1,6 +1,5 @@
 #include <iostream>
 #include "uebung6.h"
-#include <iostream>
 using namespace std;
 
 // Funktion zur Kategorisierung von Dreiecken
