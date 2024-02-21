@@ -14,6 +14,7 @@
 #include "uebung9.h"
 #include "main.h"
 #include "uebung10.h"
+#include "uebung11.h"
 using namespace std;
 
 void uebung5() {
@@ -62,6 +63,26 @@ void uebung10() {
 	aufgabe10();
 }
 
+void uebung11() {
+	// Erzeugen Sie ein CKonto-Objekt mit einem anfänglichen Kontostand von 1000 Euro und einem Dispo von 500 Euro.
+	CKonto konto(1000.0, 500.0);
+	konto.Information();
+
+	konto.Einzahlen(200.0);
+	konto.Information();
+
+	// Auszahlen von 2000 Euro (sollte fehlschlagen)
+	konto.Auszahlen(2000.0);
+	konto.Information();
+
+	konto.Auszahlen(800.0);
+	konto.Information();
+
+	// Hier wird nun das Dispo genutzt
+	konto.Auszahlen(600.0);
+	konto.Information();
+}
+
 int main()
 {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewünschte Funktion ausklammern.
@@ -95,6 +116,9 @@ int main()
 
 	// Uebung 10
 	// uebung10();
+
+	// Uebung 11
+	uebung11();
 
 }
 

@@ -53,6 +53,4 @@ void aufgabe10() {
 			cout << endl;
 		}
 	}
-
-	delete
 }
