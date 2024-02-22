@@ -130,12 +130,14 @@
     <ClCompile Include="01_CLIUnterbrechung.cpp" />
     <ClCompile Include="02_EigeneTypen.cpp" />
     <ClCompile Include="03_VariableParameterlisten.cpp" />
+    <ClCompile Include="04_Datum.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01_CLIUnterbrechung.h" />
     <ClInclude Include="02_EigeneTypen.h" />
     <ClInclude Include="03_VariableParameterlisten.h" />
+    <ClInclude Include="04_Datum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

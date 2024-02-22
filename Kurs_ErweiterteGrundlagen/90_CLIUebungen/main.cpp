@@ -15,6 +15,8 @@
 #include "main.h"
 #include "uebung10.h"
 #include "uebung11.h"
+#include "uebung12.h"
+#include "uebung12_01.h"
 using namespace std;
 
 void uebung5() {
@@ -83,6 +85,24 @@ void uebung11() {
 	konto.Information();
 }
 
+void uebung12() {
+	Datum benutzerDatum(22, 2, 2024);
+
+	cout << "Benutzerdefiniertes Datum: ";
+	benutzerDatum.DruckDatum();
+
+	cout << "Wochentag: " << benutzerDatum.DruckWochentag() << endl;
+
+	DatumAusgabe datumAusgabe(22, 2, 2024);
+	datumAusgabe.AusgabeA();
+	datumAusgabe.AusgabeB();
+	datumAusgabe.AusgabeC();
+	datumAusgabe.AusgabeD();
+
+	cout << "Druckdatum der Klasse Datumausgabe: ";
+	datumAusgabe.DruckDatum();
+}
+
 int main()
 {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewünschte Funktion ausklammern.
@@ -118,7 +138,10 @@ int main()
 	// uebung10();
 
 	// Uebung 11
-	uebung11();
+	// uebung11();
+
+	// Uebung 12
+	uebung12();
 
 }
 
