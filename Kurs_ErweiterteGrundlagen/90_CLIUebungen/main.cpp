@@ -17,6 +17,9 @@
 #include "uebung11.h"
 #include "uebung12.h"
 #include "uebung12_01.h"
+#include "uebung13_Product.h"
+#include "uebung13_PackedFood.h"
+#include "uebung13_UnpackedFood.h"
 using namespace std;
 
 void uebung5() {
@@ -26,7 +29,7 @@ void uebung5() {
 	cout << "Geben Sie eine Zeichenkette ein: ";
 	cin >> zeichenkette;
 
-	// Länge der Zeichenkette berechnen
+	// Laenge der Zeichenkette berechnen
 	int laenge = zeichenkette.length();
 
 	// Umgekehrte Zeichenkette ausgeben
@@ -35,7 +38,7 @@ void uebung5() {
 
 void uebung6() {
 	// Die Ausgaben passen noch nicht mit der entsprechenden Wahrheitstabelle
-	// überein. Sind jedoch für den Kursinhalt irrelevant.
+	// ueberein. Sind jedoch fuer den Kursinhalt irrelevant.
 
 	kategorisiereDreieck(true, true, false, false, false); // Gleichseitig
 
@@ -66,7 +69,7 @@ void uebung10() {
 }
 
 void uebung11() {
-	// Erzeugen Sie ein CKonto-Objekt mit einem anfänglichen Kontostand von 1000 Euro und einem Dispo von 500 Euro.
+	// Erzeugen Sie ein CKonto-Objekt mit einem anfaenglichen Kontostand von 1000 Euro und einem Dispo von 500 Euro.
 	CKonto konto(1000.0, 500.0);
 	konto.Information();
 
@@ -103,9 +106,109 @@ void uebung12() {
 	datumAusgabe.DruckDatum();
 }
 
+void uebung13() {
+	// Objekte mit vollstaendiger Initialisierung
+	Product produkt1(123456, "Produkt1");
+	PackedFood verpackteLebensmittel1(789012, "VerpackteLebensmittel1", 2.5);
+	UnpackedFood loseLebensmittel1(345678, "LoseLebensmittel1", 1.5, 4.99);
+
+	// Getter und Printer fuer produkt1
+	cout << "Produkt1 - Urspruengliche Werte:\n";
+	produkt1.printer();
+	cout << "Produkt1 Barcode: " << produkt1.getCode() << endl;
+	cout << "Produkt1 Name: " << produkt1.getName() << endl;
+	cout << "--------------------------------\n";
+
+	// Setter fuer produkt1
+	produkt1.setCode(654321);
+	produkt1.setName("NeuesProdukt1");
+
+	// Getter und Printer fuer produkt1 nach aenderung
+	cout << "Produkt1 - Aktualisierte Werte:\n";
+	produkt1.printer();
+	cout << "Produkt1 Barcode: " << produkt1.getCode() << endl;
+	cout << "Produkt1 Name: " << produkt1.getName() << endl;
+	cout << "--------------------------------\n";
+
+	// Getter und Printer fuer verpackteLebensmittel1
+	cout << "VerpackteLebensmittel1 - Urspruengliche Werte:\n";
+	verpackteLebensmittel1.printer();
+	cout << "VerpackteLebensmittel1 Barcode: " << verpackteLebensmittel1.getCode() << endl;
+	cout << "VerpackteLebensmittel1 Name: " << verpackteLebensmittel1.getName() << endl;
+	cout << "VerpackteLebensmittel1 Stueckpreis: " << verpackteLebensmittel1.getUnitPrice() << endl;
+	cout << "--------------------------------\n";
+
+	// Setter fuer verpackteLebensmittel1
+	verpackteLebensmittel1.setCode(111111);
+	verpackteLebensmittel1.setName("NeueVerpackteLebensmittel1");
+	verpackteLebensmittel1.setUnitPrice(3.99);
+
+	// Getter und Printer fuer verpackteLebensmittel1 nach aenderung
+	cout << "VerpackteLebensmittel1 - Aktualisierte Werte:\n";
+	verpackteLebensmittel1.printer();
+	cout << "VerpackteLebensmittel1 Barcode: " << verpackteLebensmittel1.getCode() << endl;
+	cout << "VerpackteLebensmittel1 Name: " << verpackteLebensmittel1.getName() << endl;
+	cout << "VerpackteLebensmittel1 Stueckpreis: " << verpackteLebensmittel1.getUnitPrice() << endl;
+	cout << "--------------------------------\n";
+
+	// Getter und Printer fuer loseLebensmittel1
+	cout << "LoseLebensmittel1 - Urspruengliche Werte:\n";
+	loseLebensmittel1.printer();
+	cout << "LoseLebensmittel1 Barcode: " << loseLebensmittel1.getCode() << endl;
+	cout << "LoseLebensmittel1 Name: " << loseLebensmittel1.getName() << endl;
+	cout << "LoseLebensmittel1 Gewicht: " << loseLebensmittel1.getWeight() << endl;
+	cout << "LoseLebensmittel1 Kilopreis: " << loseLebensmittel1.getKiloPrice() << endl;
+	cout << "--------------------------------\n";
+
+	// Setter fuer loseLebensmittel1
+	loseLebensmittel1.setCode(222222);
+	loseLebensmittel1.setName("NeueLoseLebensmittel1");
+	loseLebensmittel1.setWeight(2.0);
+	loseLebensmittel1.setKiloPrice(5.49);
+
+	// Getter und Printer fuer loseLebensmittel1 nach aenderung
+	cout << "LoseLebensmittel1 - Aktualisierte Werte:\n";
+	loseLebensmittel1.printer();
+	cout << "LoseLebensmittel1 Barcode: " << loseLebensmittel1.getCode() << endl;
+	cout << "LoseLebensmittel1 Name: " << loseLebensmittel1.getName() << endl;
+	cout << "LoseLebensmittel1 Gewicht: " << loseLebensmittel1.getWeight() << endl;
+	cout << "LoseLebensmittel1 Kilopreis: " << loseLebensmittel1.getKiloPrice() << endl;
+	cout << "--------------------------------\n";
+
+	// Objekte mit Default-Konstruktor
+	Product produkt2;
+	PackedFood verpackteLebensmittel2;
+	UnpackedFood loseLebensmittel2;
+
+	// Testen von get- und set-Methoden sowie scanner() und printer() fuer die Objekte mit Default-Konstruktor
+	cout << "Eingabe - Produkt 2 Scanner:\n";
+	produkt2.scanner();
+	cout << "--------------------------------\n";
+
+	cout << "Eingabe - VerpackteLebensmittel 2 Scanner:\n";
+	verpackteLebensmittel2.scanner();
+	cout << "--------------------------------\n";
+
+	cout << "Eingabe - LoseLebensmittel2 Scanner:\n";
+	loseLebensmittel2.scanner();
+	cout << "--------------------------------\n";
+
+	cout << "Produkt2 - Werte nach Scanner:\n";
+	produkt2.printer();
+	cout << "--------------------------------\n";
+
+	cout << "VerpackteLebensmittel2 - Werte nach Scanner:\n";
+	verpackteLebensmittel2.printer();
+	cout << "--------------------------------\n";
+
+	cout << "LoseLebensmittel2 - Werte nach Scanner:\n";
+	loseLebensmittel2.printer();
+	cout << "--------------------------------\n";
+}
+
 int main()
 {
-	// Aufruf der entsprechenden Uebungsfunktionen. Gewünschte Funktion ausklammern.
+	// Aufruf der entsprechenden Uebungsfunktionen. Gewuenschte Funktion ausklammern.
 
 	// Uebung 1
 	// namensausgabe();
@@ -141,7 +244,10 @@ int main()
 	// uebung11();
 
 	// Uebung 12
-	uebung12();
+	// uebung12();
+
+	// Uebung 13
+	uebung13();
 
 }
 

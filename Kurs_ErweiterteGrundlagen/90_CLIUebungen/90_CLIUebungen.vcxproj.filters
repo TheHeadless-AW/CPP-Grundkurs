@@ -57,6 +57,15 @@
     <ClCompile Include="uebung12_01.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung13_Product.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung13_PackedFood.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="uebung13_UnpackedFood.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h">
@@ -99,6 +108,15 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="uebung12_01.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung13_UnpackedFood.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung13_PackedFood.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung13_Product.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
