@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 class ComplexNumber {
 public:
     ComplexNumber(); // Standardkonstruktor
@@ -23,7 +25,9 @@ public:
     ComplexNumber operator-(const ComplexNumber& other) const;
 
     // Überladung des Ausgabeoperators
-    friend std::ostream& operator<<(std::ostream& out, const ComplexNumber& complexNumber);
+    // friend wird hier verwendet, um die operator<<-Funktion zu deklarieren,
+    // und damit Zugriff auf die privaten Elemente der ComplexNumber-Klasse zu gewähren.
+    friend ostream& operator<<(ostream& out, const ComplexNumber& complexNumber);
 
 private:
     double realPart;

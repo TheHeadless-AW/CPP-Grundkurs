@@ -4,6 +4,8 @@
 */
 #include "05_Operatorenueberladung.h"
 
+using namespace std;
+
 // Standardkonstruktor
 ComplexNumber::ComplexNumber() : realPart(0.0), imaginaryPart(0.0) {}
 
@@ -30,7 +32,7 @@ ComplexNumber ComplexNumber::operator-(const ComplexNumber& other) const {
 }
 
 // Überladung des Ausgabeoperators
-std::ostream& operator<<(std::ostream& out, const ComplexNumber& complexNumber) {
+ostream& operator<<(ostream& out, const ComplexNumber& complexNumber) {
     out << complexNumber.realPart << " + " << complexNumber.imaginaryPart << "i";
     return out;
 }

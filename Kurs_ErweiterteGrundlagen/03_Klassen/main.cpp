@@ -1,21 +1,24 @@
-#include "00_BeispielCKFZ.h"
-
+#include "../04_Dateiverarbeitung/01_DateiverarbeitungSimpel.h"
 using namespace std;
 
+void dateiverarbeitung() {
+    // Schreibende Dateiverarbeitung
+    vector<string> schreibDaten = { "Hallo", "Welt", "C++" };
+    dateiSchreiben("ausgabe.txt", schreibDaten);
 
-void ckfzbeispiel() {
-    CKfz auto1("Volkswagen", "Blau", 150);
-    auto1.setVMax(200);
-    auto1.setGeschwindigkeit(80);
-    auto1.print();
-     
-    // Versuche, die Marke zu ändern (sollte nicht möglich sein)
-    // auto1.setMarke("BMW");  // Diese Zeile sollte zu einem Kompilierungsfehler führen
+    // Lesende Dateiverarbeitung
+    vector<string> leseDaten;
+    dateiLesen("ausgabe.txt", leseDaten);
+
+    // Ausgabe der gelesenen Daten
+    cout << "Gelesene Daten: ";
+    for (const auto& zeile : leseDaten) {
+        cout << zeile << " ";
+    }
+    cout << endl;
 }
 
 int main() {
-
-	// CKFZ Beispiel
-	ckfzbeispiel();
+	// 01_DateiverarbeitungSimpel
 
 }
