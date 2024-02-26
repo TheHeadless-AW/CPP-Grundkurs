@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #ifndef PRODUCT_H
 #define PRODUCT_H
 

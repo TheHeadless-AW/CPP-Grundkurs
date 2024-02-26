@@ -8,7 +8,22 @@
 #include "02_EigeneTypen.h"
 #include "03_VariableParameterlisten.h"
 #include "04_Datum.h"
+#include "main.h"
+#include "05_Operatorenueberladung.h"
 using namespace std;
+
+void operatorenueberladung() {
+	ComplexNumber a(2.0, 3.0);
+	ComplexNumber b(1.0, 4.0);
+
+	ComplexNumber sum = a + b;
+	ComplexNumber difference = a - b;
+
+	cout << "a: " << a << endl;
+	cout << "b: " << b << endl;
+	cout << "Summe: " << sum << endl;
+	cout << "Differenz: " << difference << endl;
+}
 
 int main() {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewünschte Funktion ausklammern.
@@ -27,6 +42,9 @@ int main() {
 	// eigenesPrintF("Ganzzahl: %d, Gleitkommazahl: %f, String: %s und ein einzelnes % Zeichen\n", 42, 3.14, "Hello World Test!");
 
 	// 04_Datum
-	datumsAnzeige();
+	// datumsAnzeige();
+
+	// 05_Operatorenueberladung
+	operatorenueberladung();
 }
 

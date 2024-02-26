@@ -30,6 +30,9 @@
     <ClCompile Include="04_Datum.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="05_Operatorenueberladung.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="01_CLIUnterbrechung.h">
@@ -42,6 +45,12 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="04_Datum.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="05_Operatorenueberladung.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

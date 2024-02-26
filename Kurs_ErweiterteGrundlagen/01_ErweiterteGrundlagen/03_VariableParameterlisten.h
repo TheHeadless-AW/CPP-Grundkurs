@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #pragma once
 
 double berechneDurchschnitt(int anzahl, ...);

@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #ifndef UEBUNG12_H
 #define UEBUNG12_H
 

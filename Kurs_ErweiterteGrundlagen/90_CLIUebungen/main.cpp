@@ -14,12 +14,13 @@
 #include "uebung9.h"
 #include "main.h"
 #include "uebung10.h"
-#include "uebung11.h"
+//  #include "uebung11.h" // Auskommentieren wenn Übung 11 ausprobiert werden soll
 #include "uebung12.h"
 #include "uebung12_01.h"
 #include "uebung13_Product.h"
 #include "uebung13_PackedFood.h"
 #include "uebung13_UnpackedFood.h"
+#include "uebung14.h"
 using namespace std;
 
 void uebung5() {
@@ -68,9 +69,10 @@ void uebung10() {
 	aufgabe10();
 }
 
+// Auskommentieren wenn Übung 11 ausprobiert werden soll
 void uebung11() {
 	// Erzeugen Sie ein CKonto-Objekt mit einem anfaenglichen Kontostand von 1000 Euro und einem Dispo von 500 Euro.
-	CKonto konto(1000.0, 500.0);
+	/* CKonto konto(1000.0, 500.0);
 	konto.Information();
 
 	konto.Einzahlen(200.0);
@@ -85,7 +87,7 @@ void uebung11() {
 
 	// Hier wird nun das Dispo genutzt
 	konto.Auszahlen(600.0);
-	konto.Information();
+	konto.Information(); */
 }
 
 void uebung12() {
@@ -206,6 +208,42 @@ void uebung13() {
 	cout << "--------------------------------\n";
 }
 
+void uebung14() {
+	// Beispiel für CPerson
+	CPerson person1;
+	person1.lesen();
+	person1.schreiben();
+
+	// Beispiel für CKonto
+	CKonto konto1(1000.0);
+	konto1.einzahlen(500.0);
+	konto1.abheben(200.0);
+
+	// Beispiel für CGiroKonto
+	CGiroKonto girokonto1(2000.0, 500.0, 10.0);
+	girokonto1.einzahlen(1000.0);
+	girokonto1.abheben(800.0);
+	cout << "Dispo: " << girokonto1.getDispo() << ", Dispo Prozent: " << girokonto1.getDispoProzent() << endl;
+
+	// Beispiel für CSparKonto
+	CSparKonto sparkonto1(3000.0, 12, 5.0);
+	sparkonto1.einzahlen(2000.0);
+	sparkonto1.abheben(1000.0);
+	cout << "Dauer: " << sparkonto1.getDauer() << ", Zinssatz: " << sparkonto1.getZinssatz() << endl;
+
+	// Beispiel für CSparer
+	CSparer saver1("Max", "Mustermann", "01.01.1990", 5000.0, 24, 3.0);
+	saver1.schreiben();
+
+	// Beispiel für CGirokunde
+	CGirokunde girokunde1("Anna", "Musterfrau", "05.05.1985", 3000.0, 200.0, 8.0);
+	girokunde1.schreiben();
+
+	// Beispiel für CKombi
+	CKombi kombi1("John", "Doe", "10.10.1970", 7000.0, 300.0, 12.0, 36, 4.5);
+	kombi1.schreiben();
+}
+
 int main()
 {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewuenschte Funktion ausklammern.
@@ -247,7 +285,10 @@ int main()
 	// uebung12();
 
 	// Uebung 13
-	uebung13();
+	// uebung13();
+
+	// Uebung 14
+	uebung14();
 
 }
 

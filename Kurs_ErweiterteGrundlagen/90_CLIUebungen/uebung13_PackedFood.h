@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #ifndef PACKEDFOOD_H
 #define PACKEDFOOD_H
 

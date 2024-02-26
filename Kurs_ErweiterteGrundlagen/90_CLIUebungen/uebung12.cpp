@@ -1,3 +1,7 @@
+/*
+* @author Adrian Weidig
+* Contact: theheadless@gmx.net
+*/
 #include "uebung12.h"
 
 Datum::Datum(int t, int m, int j) : Tag(t), Monat(m), Jahr(j) {
