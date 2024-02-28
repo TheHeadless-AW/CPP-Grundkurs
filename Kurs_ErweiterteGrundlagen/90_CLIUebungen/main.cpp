@@ -21,6 +21,11 @@
 #include "uebung13_PackedFood.h"
 #include "uebung13_UnpackedFood.h"
 #include "uebung14.h"
+#include "uebung15.h"
+#include <vector>
+#include <list>
+#include <deque>
+#include "uebung16.h"
 using namespace std;
 
 void uebung5() {
@@ -244,6 +249,36 @@ void uebung14() {
 	kombi1.schreiben();
 }
 
+void uebung15() {
+	// Beispielaufrufe
+	std::vector<int> v = { 1, 2, 3, 4, 5 };
+	ElementAusgabe(v, '*'); // Gibt die Elemente mit '*' als Trennzeichen aus
+
+	std::list<std::string> strList = { "Hallo", "Welt", "C++" };
+	ElementAusgabe(strList); // Gibt die Elemente untereinander aus, da kein Trennzeichen übergeben wurde
+
+	std::deque<double> d = { 3.14, 2.718, 1.618 };
+	ElementAusgabe(d, ','); // Gibt die Elemente mit ',' als Trennzeichen aus
+}
+
+void uebung16() {
+	Personalverwaltung personalverwaltung;
+
+	// Anzahl der Namen eingeben
+	int anzahl;
+	cout << "Anzahl der Namen eingeben: ";
+	cin >> anzahl;
+
+	// Namen und Nummern eingeben
+	personalverwaltung.NamenUndNummernEingeben(anzahl);
+
+	// Namen und Nummern zu den Maps hinzufügen
+	personalverwaltung.ZuMapHinzufuegen();
+
+	// Alphabetisch sortierte Listen ausgeben
+	personalverwaltung.AlphabetischSortierteListenAusgeben();
+}
+
 int main()
 {
 	// Aufruf der entsprechenden Uebungsfunktionen. Gewuenschte Funktion ausklammern.
@@ -288,7 +323,13 @@ int main()
 	// uebung13();
 
 	// Uebung 14
-	uebung14();
+	// uebung14();
+
+	// Uebung 15
+	// uebung15();
+
+	// Uebung 16
+	uebung16();
 
 }
 

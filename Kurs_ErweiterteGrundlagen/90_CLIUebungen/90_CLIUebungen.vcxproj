@@ -137,6 +137,7 @@
     <ClCompile Include="uebung13_Product.cpp" />
     <ClCompile Include="uebung13_UnpackedFood.cpp" />
     <ClCompile Include="uebung14.cpp" />
+    <ClCompile Include="uebung16.cpp" />
     <ClCompile Include="uebung2.cpp" />
     <ClCompile Include="uebung3.cpp" />
     <ClCompile Include="uebung4.cpp" />
@@ -157,6 +158,8 @@
     <ClInclude Include="uebung13_Product.h" />
     <ClInclude Include="uebung13_UnpackedFood.h" />
     <ClInclude Include="uebung14.h" />
+    <ClInclude Include="uebung15.h" />
+    <ClInclude Include="uebung16.h" />
     <ClInclude Include="uebung2.h" />
     <ClInclude Include="uebung3.h" />
     <ClInclude Include="uebung4.h" />

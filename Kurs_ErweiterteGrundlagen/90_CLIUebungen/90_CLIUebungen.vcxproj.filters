@@ -69,6 +69,9 @@
     <ClCompile Include="uebung14.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="uebung16.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uebung1.h">
@@ -123,6 +126,12 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="uebung14.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung16.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="uebung15.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
