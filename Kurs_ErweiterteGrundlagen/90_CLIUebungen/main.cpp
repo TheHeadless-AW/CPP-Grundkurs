@@ -250,14 +250,13 @@ void uebung14() {
 }
 
 void uebung15() {
-	// Beispielaufrufe
-	std::vector<int> v = { 1, 2, 3, 4, 5 };
+	vector<int> v = { 1, 2, 3, 4, 5 };
 	ElementAusgabe(v, '*'); // Gibt die Elemente mit '*' als Trennzeichen aus
 
-	std::list<std::string> strList = { "Hallo", "Welt", "C++" };
+	list<string> strList = { "Hallo", "Welt", "C++" };
 	ElementAusgabe(strList); // Gibt die Elemente untereinander aus, da kein Trennzeichen übergeben wurde
 
-	std::deque<double> d = { 3.14, 2.718, 1.618 };
+	deque<double> d = { 3.14, 2.718, 1.618 };
 	ElementAusgabe(d, ','); // Gibt die Elemente mit ',' als Trennzeichen aus
 }
 
@@ -326,10 +325,10 @@ int main()
 	// uebung14();
 
 	// Uebung 15
-	// uebung15();
+	uebung15();
 
 	// Uebung 16
-	uebung16();
+	// uebung16();
 
 }
 
