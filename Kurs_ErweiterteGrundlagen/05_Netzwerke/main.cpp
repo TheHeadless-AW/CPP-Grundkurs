@@ -1,16 +1,17 @@
 #include <iostream>
 #include <string>
+using namespace std;
 
 void starteServer();
 void starteClient();
 
 int main() {
-    std::cout << "Willkommen zur Client-Server-Anwendung!\n";
+    cout << "Willkommen zur Client-Server-Anwendung!\n";
 
-    std::string auswahl;
+    string auswahl;
 
-    std::cout << "Möchten Sie als Server (s) oder als Client (c) starten? ";
-    std::cin >> auswahl;
+    cout << "Moechten Sie als Server (s) oder als Client (c) starten? ";
+    cin >> auswahl;
 
     if (auswahl == "s" || auswahl == "S") {
         starteServer();
@@ -19,7 +20,7 @@ int main() {
         starteClient();
     }
     else {
-        std::cout << "Ungültige Auswahl. Programm wird beendet.\n";
+        cout << "Ungueltige Auswahl. Programm wird beendet.\n";
     }
 
     return 0;
